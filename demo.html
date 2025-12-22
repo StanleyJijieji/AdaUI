@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdaUI Design System Demo</title>
+    <link rel="stylesheet" href="variable.css">
+    <link rel="stylesheet" href="tabler-icons.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img src="asset/logo/logo_light.svg" alt="AdaUI Logo" class="logo" style="height: 40px; margin-bottom: 16px;">
+            <h1>Ada.im UI System / Comprehensive guide to the styles and components</h1>
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <p class="lead"
+                    style="font-family: var(--Font-Paragraph-Lead-Family); font-size: var(--Font-Paragraph-Lead-Size); color: var(--Color-Text-Muted); margin-bottom: 0;">
+                    A comprehensive guide to the styles and components.
+                </p>
+                <!-- Switch Toggle for Dark Mode -->
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-switch" aria-label="Toggle Dark Mode">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+
+        <!-- TABS NAVIGATION -->
+        <nav class="tabs">
+            <button class="tab-btn active" onclick="openTab('components')">Components</button>
+            <button class="tab-btn" onclick="openTab('colors')">Colors</button>
+            <button class="tab-btn" onclick="openTab('typography')">Typography</button>
+            <button class="tab-btn" onclick="openTab('effects')">Effects</button>
+            <button class="tab-btn" onclick="openTab('icons')">Icons</button>
+        </nav>
+
+        <!-- COMPONENTS SECTION -->
+        <div id="tab-components" class="tab-content active">
+            <div class="components-container">
+                <aside class="sidebar">
+                    <div style="font-weight: bold; margin-bottom: 12px; padding-left: 12px;">Components</div>
+                    <nav class="component-nav" id="component-list">
+                        <!-- List items injected by JS -->
+                    </nav>
+                </aside>
+                <main class="main-content-area">
+                    <div id="component-display">
+                        <!-- Selected component details injected here -->
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- COLORS SECTION -->
+        <div id="tab-colors" class="tab-content active">
+            <section>
+                <h2 class="section-title">Colors</h2>
+
+                <!-- Light Theme -->
+                <h3 class="subsection-title">Light Theme - Text</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Light-TypographyColor-BodyText">
+                        <div class="swatch-color" style="background: var(--Light-TypographyColor-BodyText);"></div>
+                        <div class="swatch-name">BodyText</div>
+                    </div>
+                    <div class="swatch" title="--Light-TypographyColor-HeadingText">
+                        <div class="swatch-color" style="background: var(--Light-TypographyColor-HeadingText);"></div>
+                        <div class="swatch-name">HeadingText</div>
+                    </div>
+                    <div class="swatch" title="--Light-TypographyColor-MutedText">
+                        <div class="swatch-color" style="background: var(--Light-TypographyColor-MutedText);"></div>
+                        <div class="swatch-name">MutedText</div>
+                    </div>
+                    <div class="swatch" title="--Light-TypographyColor-PlaceholderText">
+                        <div class="swatch-color" style="background: var(--Light-TypographyColor-PlaceholderText);">
+                        </div>
+                        <div class="swatch-name">Placeholder</div>
+                    </div>
+                    <div class="swatch" title="--Light-TypographyColor-PrimaryText">
+                        <div class="swatch-color" style="background: var(--Light-TypographyColor-PrimaryText);"></div>
+                        <div class="swatch-name">PrimaryText</div>
+                    </div>
+
+                    <div class="swatch" title="--Light-TypographyColor-WhiteText">
+                        <div class="swatch-color" style="background: var(--Light-TypographyColor-WhiteText);"></div>
+                        <div class="swatch-name">WhiteText</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Light Theme - Backgrounds</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Light-SolidColor-Extra-BodyBackground">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Extra-BodyBackground);">
+                        </div>
+                        <div class="swatch-name">BodyBg</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Extra-HeaderBackground">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Extra-HeaderBackground);">
+                        </div>
+                        <div class="swatch-name">HeaderBg</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Extra-CardBackground">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Extra-CardBackground);">
+                        </div>
+                        <div class="swatch-name">CardBg</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Extra-Divider">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Extra-Divider);"></div>
+                        <div class="swatch-name">Divider</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Extra-Dark">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Extra-Dark);"></div>
+                        <div class="swatch-name">ExtraDark</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Extra-Light">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Extra-Light);"></div>
+                        <div class="swatch-name">ExtraLight</div>
+                    </div>
+                    <div class="swatch" title="--Itemselected">
+                        <div class="swatch-color" style="background: var(--Itemselected);"></div>
+                        <div class="swatch-name">Selected</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Light Theme - Grays</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Light-SolidColor-Gray100">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray100);"></div>
+                        <div class="swatch-name">Gray100</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Gray200">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray200);"></div>
+                        <div class="swatch-name">Gray200</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Gray300">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray300);"></div>
+                        <div class="swatch-name">Gray300</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Gray400">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray400);"></div>
+                        <div class="swatch-name">Gray400</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Gray500">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray500);"></div>
+                        <div class="swatch-name">Gray500</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Gray600">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray600);"></div>
+                        <div class="swatch-name">Gray600</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Gray700">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray700);"></div>
+                        <div class="swatch-name">Gray700</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Gray800">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray800);"></div>
+                        <div class="swatch-name">Gray800</div>
+                    </div>
+                    <div class="swatch" title="--Light-SolidColor-Gray900">
+                        <div class="swatch-color" style="background: var(--Light-SolidColor-Gray900);"></div>
+                        <div class="swatch-name">Gray900</div>
+                    </div>
+                </div>
+
+                <!-- Functional Colors -->
+                <h3 class="subsection-title">Functional - Primary</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Functional-Solid-Primary100">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary100);"></div>
+                        <div class="swatch-name">Pri100</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Primary200">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary200);"></div>
+                        <div class="swatch-name">Pri200</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Primary300">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary300);"></div>
+                        <div class="swatch-name">Pri300</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Primary400">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary400);"></div>
+                        <div class="swatch-name">Pri400</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Primary500">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary500);"></div>
+                        <div class="swatch-name">Pri500</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Primary600">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary600);"></div>
+                        <div class="swatch-name">Pri600</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Primary700">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary700);"></div>
+                        <div class="swatch-name">Pri700</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Primary800">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary800);"></div>
+                        <div class="swatch-name">Pri800</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Primary900">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Primary900);"></div>
+                        <div class="swatch-name">Pri900</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Functional - Secondary</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Functional-Solid-Secondary100">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary100);"></div>
+                        <div class="swatch-name">Sec100</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Secondary200">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary200);"></div>
+                        <div class="swatch-name">Sec200</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Secondary300">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary300);"></div>
+                        <div class="swatch-name">Sec300</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Secondary400">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary400);"></div>
+                        <div class="swatch-name">Sec400</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Secondary500">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary500);"></div>
+                        <div class="swatch-name">Sec500</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Secondary600">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary600);"></div>
+                        <div class="swatch-name">Sec600</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Secondary700">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary700);"></div>
+                        <div class="swatch-name">Sec700</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Secondary800">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary800);"></div>
+                        <div class="swatch-name">Sec800</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Secondary900">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Secondary900);"></div>
+                        <div class="swatch-name">Sec900</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Functional - Success</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Functional-Solid-Success100">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success100);"></div>
+                        <div class="swatch-name">Suc100</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Success200">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success200);"></div>
+                        <div class="swatch-name">Suc200</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Success300">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success300);"></div>
+                        <div class="swatch-name">Suc300</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Success400">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success400);"></div>
+                        <div class="swatch-name">Suc400</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Success500">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success500);"></div>
+                        <div class="swatch-name">Suc500</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Success600">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success600);"></div>
+                        <div class="swatch-name">Suc600</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Success700">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success700);"></div>
+                        <div class="swatch-name">Suc700</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Success800">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success800);"></div>
+                        <div class="swatch-name">Suc800</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Success900">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Success900);"></div>
+                        <div class="swatch-name">Suc900</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Functional - Info</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Functional-Solid-Info100">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info100);"></div>
+                        <div class="swatch-name">Info100</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Info200">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info200);"></div>
+                        <div class="swatch-name">Info200</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Info300">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info300);"></div>
+                        <div class="swatch-name">Info300</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Info400">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info400);"></div>
+                        <div class="swatch-name">Info400</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Info500">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info500);"></div>
+                        <div class="swatch-name">Info500</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Info600">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info600);"></div>
+                        <div class="swatch-name">Info600</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Info700">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info700);"></div>
+                        <div class="swatch-name">Info700</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Info800">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info800);"></div>
+                        <div class="swatch-name">Info800</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Info900">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Info900);"></div>
+                        <div class="swatch-name">Info900</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Functional - Warning</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Functional-Solid-Warning100">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning100);"></div>
+                        <div class="swatch-name">Warn100</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Warning200">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning200);"></div>
+                        <div class="swatch-name">Warn200</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Warning300">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning300);"></div>
+                        <div class="swatch-name">Warn300</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Warning400">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning400);"></div>
+                        <div class="swatch-name">Warn400</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Warning500">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning500);"></div>
+                        <div class="swatch-name">Warn500</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Warning600">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning600);"></div>
+                        <div class="swatch-name">Warn600</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Warning700">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning700);"></div>
+                        <div class="swatch-name">Warn700</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Warning800">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning800);"></div>
+                        <div class="swatch-name">Warn800</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Warning900">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Warning900);"></div>
+                        <div class="swatch-name">Warn900</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Functional - Danger</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Functional-Solid-Danger100">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger100);"></div>
+                        <div class="swatch-name">Dang100</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Danger200">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger200);"></div>
+                        <div class="swatch-name">Dang200</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Danger300">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger300);"></div>
+                        <div class="swatch-name">Dang300</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Danger400">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger400);"></div>
+                        <div class="swatch-name">Dang400</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Danger500">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger500);"></div>
+                        <div class="swatch-name">Dang500</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Danger600">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger600);"></div>
+                        <div class="swatch-name">Dang600</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Danger700">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger700);"></div>
+                        <div class="swatch-name">Dang700</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Danger800">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger800);"></div>
+                        <div class="swatch-name">Dang800</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Solid-Danger900">
+                        <div class="swatch-color" style="background: var(--Functional-Solid-Danger900);"></div>
+                        <div class="swatch-name">Dang900</div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Functional - Gradients</h3>
+                <div class="color-grid">
+                    <div class="swatch" title="--Functional-Gradient-BodyGradient">
+                        <div class="swatch-color" style="background: var(--Functional-Gradient-BodyGradient);"></div>
+                        <div class="swatch-name">BodyGrad</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Gradient-Primary">
+                        <div class="swatch-color" style="background: var(--Functional-Gradient-Primary);"></div>
+                        <div class="swatch-name">Primary</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Gradient-Secondary">
+                        <div class="swatch-color" style="background: var(--Functional-Gradient-Secondary);"></div>
+                        <div class="swatch-name">Secondary</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Gradient-Success">
+                        <div class="swatch-color" style="background: var(--Functional-Gradient-Success);"></div>
+                        <div class="swatch-name">Success</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Gradient-Info">
+                        <div class="swatch-color" style="background: var(--Functional-Gradient-Info);"></div>
+                        <div class="swatch-name">Info</div>
+                    </div>
+                    <div class="swatch" title="--Functional-Gradient-Warning">
+                        <div class="swatch-color" style="background: var(--Functional-Gradient-Warning);"></div>
+                        <div class="swatch-name">Warning</div>
+                    </div>
+                    <div class="swatch" title="--Pro01">
+                        <div class="swatch-color" style="background: var(--Pro01);"></div>
+                        <div class="swatch-name">Pro01</div>
+                    </div>
+                    <div class="swatch" title="--Pro02">
+                        <div class="swatch-color" style="background: var(--Pro02);"></div>
+                        <div class="swatch-name">Pro02</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- TYPOGRAPHY SECTION -->
+        <div id="tab-typography" class="tab-content">
+            <section>
+                <h2 class="section-title">Typography</h2>
+
+                <h3 class="subsection-title">Display</h3>
+                <div class="type-row">
+                    <div class="type-label">Display 1</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Display-1-Weight) var(--Font-Display-1-Size)/var(--Font-Display-1-LineHeight) var(--Font-Display-1-Family); letter-spacing: var(--Font-Display-1-Spacing);">
+                        Display 1</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Display 2</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Display-2-Weight) var(--Font-Display-2-Size)/var(--Font-Display-2-LineHeight) var(--Font-Display-2-Family); letter-spacing: var(--Font-Display-2-Spacing);">
+                        Display 2</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Display 3</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Display-3-Weight) var(--Font-Display-3-Size)/var(--Font-Display-3-LineHeight) var(--Font-Display-3-Family); letter-spacing: var(--Font-Display-3-Spacing);">
+                        Display 3</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Display 4</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Display-4-Weight) var(--Font-Display-4-Size)/var(--Font-Display-4-LineHeight) var(--Font-Display-4-Family); letter-spacing: var(--Font-Display-4-Spacing);">
+                        Display 4</div>
+                </div>
+
+                <h3 class="subsection-title">Headings</h3>
+                <div class="type-row">
+                    <div class="type-label">H1</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Heading-H1-Weight) var(--Font-Heading-H1-Size)/var(--Font-Heading-H1-LineHeight) var(--Font-Heading-H1-Family); letter-spacing: var(--Font-Heading-H1-Spacing);">
+                        Heading 1</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">H2</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Heading-H2-Weight) var(--Font-Heading-H2-Size)/var(--Font-Heading-H2-LineHeight) var(--Font-Heading-H2-Family); letter-spacing: var(--Font-Heading-H2-Spacing);">
+                        Heading 2</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">H3</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Heading-H3-Weight) var(--Font-Heading-H3-Size)/var(--Font-Heading-H3-LineHeight) var(--Font-Heading-H3-Family); letter-spacing: var(--Font-Heading-H3-Spacing);">
+                        Heading 3</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">H4</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Heading-H4-Weight) var(--Font-Heading-H4-Size)/var(--Font-Heading-H4-LineHeight) var(--Font-Heading-H4-Family); letter-spacing: var(--Font-Heading-H4-Spacing);">
+                        Heading 4</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">H5</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Heading-H5-Weight) var(--Font-Heading-H5-Size)/var(--Font-Heading-H5-LineHeight) var(--Font-Heading-H5-Family); letter-spacing: var(--Font-Heading-H5-Spacing);">
+                        Heading 5</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">H6</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Heading-H6-Weight) var(--Font-Heading-H6-Size)/var(--Font-Heading-H6-LineHeight) var(--Font-Heading-H6-Family); letter-spacing: var(--Font-Heading-H6-Spacing);">
+                        Heading 6</div>
+                </div>
+
+                <h3 class="subsection-title">Paragraphs</h3>
+                <div class="type-row">
+                    <div class="type-label">Lead</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Paragraph-Lead-Weight) var(--Font-Paragraph-Lead-Size)/var(--Font-Paragraph-Lead-LineHeight) var(--Font-Paragraph-Lead-Family); letter-spacing: var(--Font-Paragraph-Lead-Spacing);">
+                        Lead Paragraph</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Default</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Paragraph-Default-Weight) var(--Font-Paragraph-Default-Size)/var(--Font-Paragraph-Default-LineHeight) var(--Font-Paragraph-Default-Family); letter-spacing: var(--Font-Paragraph-Default-Spacing);">
+                        Default Paragraph</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Medium</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Paragraph-Medium-Weight) var(--Font-Paragraph-Medium-Size)/var(--Font-Paragraph-Medium-LineHeight) var(--Font-Paragraph-Medium-Family); letter-spacing: var(--Font-Paragraph-Medium-Spacing);">
+                        Medium Paragraph</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">SemiBold</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Paragraph-SemiBold-Weight) var(--Font-Paragraph-SemiBold-Size)/var(--Font-Paragraph-SemiBold-LineHeight) var(--Font-Paragraph-SemiBold-Family); letter-spacing: var(--Font-Paragraph-SemiBold-Spacing);">
+                        SemiBold Paragraph</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Bold</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Paragraph-Bold-Weight) var(--Font-Paragraph-Bold-Size)/var(--Font-Paragraph-Bold-LineHeight) var(--Font-Paragraph-Bold-Family); letter-spacing: var(--Font-Paragraph-Bold-Spacing);">
+                        Bold Paragraph</div>
+                </div>
+
+                <h3 class="subsection-title">Small Paragraphs</h3>
+                <div class="type-row">
+                    <div class="type-label">Small</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Paragraph-Small-Weight) var(--Font-Paragraph-Small-Size)/var(--Font-Paragraph-Small-LineHeight) var(--Font-Paragraph-Small-Family); letter-spacing: var(--Font-Paragraph-Small-Spacing);">
+                        Small Paragraph</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Small Medium</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Paragraph-Small-Medium-Weight) var(--Font-Paragraph-Small-Medium-Size)/var(--Font-Paragraph-Small-Medium-LineHeight) var(--Font-Paragraph-Small-Medium-Family); letter-spacing: var(--Font-Paragraph-Small-Medium-Spacing);">
+                        Small Medium Paragraph</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Small Bold</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Paragraph-Small-Bold-Weight) var(--Font-Paragraph-Small-Bold-Size)/var(--Font-Paragraph-Small-Bold-LineHeight) var(--Font-Paragraph-Small-Bold-Family); letter-spacing: var(--Font-Paragraph-Small-Bold-Spacing);">
+                        Small Bold Paragraph</div>
+                </div>
+
+                <h3 class="subsection-title">Others</h3>
+                <div class="type-row">
+                    <div class="type-label">Caption</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Caption-Weight) var(--Font-Caption-Size)/var(--Font-Caption-LineHeight) var(--Font-Caption-Family); letter-spacing: var(--Font-Caption-Spacing);">
+                        Caption Text</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Tiny</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Tiny-Weight) var(--Font-Tiny-Size)/var(--Font-Tiny-LineHeight) var(--Font-Tiny-Family); letter-spacing: var(--Font-Tiny-Spacing);">
+                        Tiny Text</div>
+                </div>
+                <div class="type-row">
+                    <div class="type-label">Code</div>
+                    <div class="type-preview"
+                        style="font: var(--Font-Code-Small-Weight) var(--Font-Code-Small-Size)/var(--Font-Code-Small-LineHeight) var(--Font-Code-Small-Family); letter-spacing: var(--Font-Code-Small-Spacing); background: #f4f4f4; padding: 4px;">
+                        Code Text</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- EFFECTS SECTION -->
+        <div id="tab-effects" class="tab-content">
+            <section>
+                <h2 class="section-title">Effects</h2>
+
+                <h3 class="subsection-title">Shadows (Light Theme)</h3>
+                <div class="effects-grid">
+                    <div class="effect-card" style="box-shadow: var(--Effect-Shadow-Light-SM);">Shadow SM</div>
+                    <div class="effect-card" style="box-shadow: var(--Effect-Shadow-Light-MD);">Shadow MD</div>
+                    <div class="effect-card" style="box-shadow: var(--Effect-Shadow-Light-LG);">Shadow LG</div>
+                    <div class="effect-card" style="box-shadow: var(--Effect-Shadow-Light-XL);">Shadow XL</div>
+                </div>
+
+                <h3 class="subsection-title">Border Radius</h3>
+                <div class="effects-grid">
+                    <div class="effect-card"
+                        style="border-radius: var(--Effect-Radius-SM); border: 1px solid var(--Color-Light-Divider);">
+                        Radius SM</div>
+                    <div class="effect-card"
+                        style="border-radius: var(--Effect-Radius-MD); border: 1px solid var(--Color-Light-Divider);">
+                        Radius MD</div>
+                    <div class="effect-card"
+                        style="border-radius: var(--Effect-Radius-LG); border: 1px solid var(--Color-Light-Divider);">
+                        Radius LG</div>
+                    <div class="effect-card"
+                        style="border-radius: var(--Effect-Radius-FULL); border: 1px solid var(--Color-Light-Divider);">
+                        Radius FULL</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ICONS SECTION -->
+        <div id="tab-icons" class="tab-content">
+            <section>
+                <h2 class="section-title">Icons</h2>
+
+                <div class="icon-filters" id="icon-filters">
+                    <!-- Filters will be generated by JS -->
+                </div>
+
+                <div class="icon-grid" id="icon-grid-container">
+                    <!-- Icons will be generated by JS -->
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="icons-data.js"></script>
+    <div id="toast">Copied to clipboard!</div>
+
+    <script>
+        // --- Utilities ---
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast(`Copied to clipboard!`);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                showToast(`Failed to copy.`);
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.innerText = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // --- Tab Switching ---
+        function openTab(tabName) {
+            const contents = document.getElementsByClassName('tab-content');
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('active');
+            }
+
+            const buttons = document.getElementsByClassName('tab-btn');
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+
+            document.getElementById('tab-' + tabName).classList.add('active');
+            // Handle external call where event might not be present
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('active');
+            } else {
+                 // Fallback if called programmatically, find the button
+                 const btn = Array.from(buttons).find(b => b.getAttribute('onclick').includes(tabName));
+                 if(btn) btn.classList.add('active');
+            }
+        }
+
+        // --- Dark Mode ---
+        const themeToggleSwitch = document.getElementById('theme-toggle-switch');
+        const logoImg = document.querySelector('.logo');
+
+        function toggleTheme(isDark) {
+            const theme = isDark ? 'dark' : 'light';
+            if (isDark) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+            
+            if (logoImg) {
+                logoImg.src = isDark ? 'asset/logo/logo_dark.svg' : 'asset/logo/logo_light.svg';
+            }
+            localStorage.setItem('theme', theme);
+            updateColorValues();
+        }
+
+        // Init Theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        const isDark = savedTheme === 'dark';
+        if (themeToggleSwitch) {
+            themeToggleSwitch.checked = isDark;
+            toggleTheme(isDark);
+            
+            themeToggleSwitch.addEventListener('change', (e) => {
+                toggleTheme(e.target.checked);
+            });
+        }
+
+        // --- Colors Logic ---
+        function initColors() {
+            const swatches = document.querySelectorAll('.swatch');
+            swatches.forEach(swatch => {
+                const varName = swatch.getAttribute('title');
+                
+                // Add value display
+                const valueDiv = document.createElement('div');
+                valueDiv.className = 'swatch-value';
+                swatch.appendChild(valueDiv);
+
+                // Add click to copy
+                swatch.addEventListener('click', () => {
+                    copyToClipboard(`var(${varName})`);
+                });
+            });
+            updateColorValues();
+        }
+
+        function updateColorValues() {
+            const swatches = document.querySelectorAll('.swatch');
+            swatches.forEach(swatch => {
+                const colorDiv = swatch.querySelector('.swatch-color');
+                const valueDiv = swatch.querySelector('.swatch-value');
+                if (colorDiv && valueDiv) {
+                    // Get the computed background color
+                    const computedStyle = getComputedStyle(colorDiv);
+                    const bgColor = computedStyle.backgroundColor; // returns rgb(...)
+                    // Convert rgb to hex if desired, or just show rgb
+                    // Let's show what the browser gives (rgb) as it's accurate
+                    valueDiv.innerText = rgbToHex(bgColor); 
+                }
+            });
+        }
+
+        function rgbToHex(rgb) {
+            if (!rgb || rgb === 'rgba(0, 0, 0, 0)') return '';
+            // Choose correct separator
+            let sep = rgb.indexOf(",") > -1 ? "," : " ";
+            // Turn "rgb(r,g,b)" into [r,g,b]
+            rgb = rgb.substr(4).split(")")[0].split(sep);
+            
+            let r = (+rgb[0]).toString(16),
+                g = (+rgb[1]).toString(16),
+                b = (+rgb[2]).toString(16);
+          
+            if (r.length == 1) r = "0" + r;
+            if (g.length == 1) g = "0" + g;
+            if (b.length == 1) b = "0" + b;
+          
+            return "#" + r + g + b;
+        }
+
+        // --- Typography & Effects Logic ---
+        function initTypeAndEffects() {
+            // Typography Rows
+            // Extract var name from style attribute is hard, but we can look for the variable usage pattern
+            // Or simplified: Just let user click and if we can't easily parse, maybe just copy the whole font shorthand?
+            // User asked to "copy css parameter name".
+            // The HTML structure is: <div class="type-preview" style="font: var(--Font...)...">
+            // This is tricky because the var name isn't stored in a data attribute.
+            // I will assume the user wants the main font variable.
+            // Let's parse the style attribute for the first var(--...) occurrence.
+            
+            document.querySelectorAll('.type-row').forEach(row => {
+                const preview = row.querySelector('.type-preview');
+                if (preview) {
+                    row.style.cursor = 'pointer';
+                    row.title = 'Click to copy CSS variable';
+                    row.addEventListener('click', () => {
+                        const style = preview.getAttribute('style');
+                        const match = style.match(/var\((--[^)]+)\)/);
+                        if (match && match[1]) {
+                            copyToClipboard(`var(${match[1]})`);
+                        } else {
+                            // Fallback: copy the first variable found
+                             const vars = style.match(/--[\w-]+/);
+                             if(vars) copyToClipboard(`var(${vars[0]})`);
+                        }
+                    });
+                }
+            });
+
+            // Effects Cards
+            document.querySelectorAll('.effect-card').forEach(card => {
+                card.style.cursor = 'pointer';
+                card.title = 'Click to copy CSS variable';
+                card.addEventListener('click', () => {
+                    const style = card.getAttribute('style');
+                    // Look for box-shadow or border-radius var
+                    const match = style.match(/var\((--[^)]+)\)/);
+                    if (match && match[1]) {
+                        copyToClipboard(`var(${match[1]})`);
+                    }
+                });
+            });
+        }
+
+        // --- Icons Logic ---
+        let currentIconFilter = 'a';
+        let currentSearchTerm = '';
+
+        function initIcons() {
+            const filterContainer = document.getElementById('icon-filters');
+            
+            // Search Input
+            const searchInput = document.createElement('input');
+            searchInput.type = 'text';
+            searchInput.placeholder = 'Search icons...';
+            searchInput.className = 'search-input';
+            searchInput.addEventListener('input', (e) => {
+                currentSearchTerm = e.target.value.toLowerCase();
+                applyIconFilters();
+            });
+            filterContainer.appendChild(searchInput);
+
+            // "1" Group Button
+            const btn1 = document.createElement('button');
+            btn1.className = 'filter-btn';
+            btn1.innerText = '1';
+            btn1.onclick = () => setIconFilter('1', btn1);
+            filterContainer.appendChild(btn1);
+
+            // A-Z Buttons
+            const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+            alphabet.forEach((letter, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                if (index === 0) btn.classList.add('active'); // Default to 'a'
+                btn.innerText = letter.toUpperCase();
+                btn.onclick = () => setIconFilter(letter, btn);
+                filterContainer.appendChild(btn);
+            });
+
+            // Initial render
+            applyIconFilters();
+        }
+
+        function setIconFilter(filter, btnElement) {
+            currentIconFilter = filter;
+            
+            // Update active state
+            const buttons = document.getElementsByClassName('filter-btn');
+            for (let i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            if(btnElement) btnElement.classList.add('active');
+
+            // Clear search if filter button is clicked (optional UX, keeping it simple)
+            // But if search is active, it overrides filter. Let's decide priority.
+            // Usually search overrides everything.
+            
+            applyIconFilters();
+        }
+
+        function applyIconFilters() {
+            let filteredIcons = [];
+
+            if (currentSearchTerm) {
+                // Search mode: ignore tabs
+                filteredIcons = allIcons.filter(icon => icon.toLowerCase().includes(currentSearchTerm));
+                // Deselect tabs visually
+                 const buttons = document.getElementsByClassName('filter-btn');
+                 for (let i = 0; i < buttons.length; i++) {
+                     buttons[i].classList.remove('active');
+                 }
+            } else {
+                // Tab mode
+                if (currentIconFilter === '1') {
+                    // Match starts with number
+                    filteredIcons = allIcons.filter(icon => /^\d/.test(icon));
+                } else {
+                    // Match starts with letter
+                    filteredIcons = allIcons.filter(icon => icon.startsWith(currentIconFilter));
+                }
+                
+                // Ensure correct tab is active (if we came back from search)
+                // This is a bit tricky without keeping track of the button element.
+                // Simplified: The button click sets the class. Search clears it.
+                // If search is cleared, we might want to re-highlight the current filter.
+                if (!document.querySelector('.filter-btn.active')) {
+                     const buttons = document.getElementsByClassName('filter-btn');
+                     for (let i = 0; i < buttons.length; i++) {
+                         if (buttons[i].innerText.toLowerCase() === currentIconFilter || (currentIconFilter==='1' && buttons[i].innerText==='1')) {
+                             buttons[i].classList.add('active');
+                         }
+                     }
+                }
+            }
+
+            renderIcons(filteredIcons);
+        }
+
+        function renderIcons(icons) {
+            const gridContainer = document.getElementById('icon-grid-container');
+            gridContainer.innerHTML = '';
+
+            if (icons.length === 0) {
+                gridContainer.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--Color-Text-Muted);">No icons found.</p>';
+                return;
+            }
+
+            const fragment = document.createDocumentFragment();
+
+            icons.forEach(icon => {
+                const item = document.createElement('div');
+                item.className = 'icon-item';
+                item.title = 'Click to copy icon name';
+                item.innerHTML = `<i class="ti ti-${icon}"></i><span class="icon-name">${icon}</span>`;
+                
+                // Copy on click
+                item.addEventListener('click', () => {
+                    copyToClipboard(icon);
+                });
+
+                fragment.appendChild(item);
+            });
+
+            gridContainer.appendChild(fragment);
+        }
+
+        // --- Components Logic ---
+        const componentList = [
+            "Introduction", "Accordion", "Alert Dialog", "Alert", "Aspect Ratio", "Avatar", "Badge", "Breadcrumb", "Button Group", "Button", "Calendar", "Card", "Carousel", "Chart", "Checkbox", "Collapsible", "Combobox", "Command", "Context Menu", "Data Table", "Date Picker", "Dialog", "Drawer", "Dropdown Menu", "Empty", "Field", "Form", "Hover Card", "Input Group", "Input OTP", "Input", "Item", "Kbd", "Label", "Menubar", "Native Select", "Navigation Menu", "Pagination", "Popover", "Progress", "Radio Group", "Resizable", "Scroll Area", "Select", "Separator", "Sheet", "Sidebar", "Skeleton", "Slider", "Sonner", "Spinner", "Switch", "Table", "Tabs", "Textarea", "Toast", "Toggle Group", "Toggle", "Tooltip", "Typography"
+        ];
+
+        const componentMocks = {
+            "Introduction": `
+<div style="max-width: 800px;">
+    <h1 style="font-size: 32px; font-weight: 700; margin-bottom: 16px;">Components</h1>
+    <p class="lead" style="margin-bottom: 32px;">Here you can find all the components available in the library. We are working on adding more components.</p>
+    
+    <div style="display: flex; gap: 16px; margin-bottom: 40px;">
+        <button class="btn-outline" onclick="copyPage()">Copy Page</button>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; border-top: 1px solid var(--Color-Divider); padding-top: 24px;">
+        <button class="btn-outline" disabled style="opacity: 0.5;">Previous</button>
+        <button class="btn-outline" onclick="navigateComponent(1)">Next</button>
+    </div>
+</div>`,
+            "Accordion": `
+<div class="accordion-item">
+    <button class="accordion-trigger">Is it accessible?</button>
+    <div class="accordion-content">Yes. It adheres to the WAI-ARIA design pattern.</div>
+</div>
+<div class="accordion-item">
+    <button class="accordion-trigger">Is it styled?</button>
+    <div class="accordion-content">Yes. It comes with default styles that matches the other components' aesthetic.</div>
+</div>
+<div class="accordion-item">
+    <button class="accordion-trigger">Is it animated?</button>
+    <div class="accordion-content">Yes. It's animated by default, but you can disable it if you prefer.</div>
+</div>`,
+            "Alert Dialog": `
+<div class="alert-dialog-overlay" style="position: relative; width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.1);">
+    <div class="alert-dialog-content">
+        <h2 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Are you absolutely sure?</h2>
+        <p style="font-size: 14px; color: var(--Color-Text-Muted); margin-bottom: 20px;">This action cannot be undone. This will permanently delete your account and remove your data from our servers.</p>
+        <div style="display: flex; justify-content: flex-end; gap: 8px;">
+            <button class="btn-outline">Cancel</button>
+            <button class="btn-primary">Continue</button>
+        </div>
+    </div>
+</div>`,
+            "Alert": `
+<div style="display: flex; flex-direction: column; gap: 16px;">
+    <div class="alert">
+        <i class="ti ti-terminal" style="font-size: 20px;"></i>
+        <div>
+            <div class="alert-title">Heads up!</div>
+            <div class="alert-desc">You can add components to your app using the cli.</div>
+        </div>
+    </div>
+    <div class="alert alert-destructive">
+        <i class="ti ti-alert-circle" style="font-size: 20px;"></i>
+        <div>
+            <div class="alert-title">Error</div>
+            <div class="alert-desc">Your session has expired. Please log in again.</div>
+        </div>
+    </div>
+</div>`,
+            "Aspect Ratio": `
+<div style="width: 450px; max-width: 100%;">
+    <div class="aspect-ratio-16-9">
+        <img src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80" alt="Photo by Drew Beamer" style="object-fit: cover; width: 100%; height: 100%;">
+    </div>
+</div>`,
+            "Avatar": `
+<div style="display: flex; gap: 16px; align-items: center;">
+    <div class="avatar"><img src="https://github.com/shadcn.png" alt="@shadcn"></div>
+    <div class="avatar">CN</div>
+</div>`,
+            "Badge": `
+<div style="display: flex; gap: 10px;">
+    <span class="badge badge-default">Default</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-outline">Outline</span>
+    <span class="badge badge-destructive">Destructive</span>
+</div>`,
+            "Breadcrumb": `
+<div class="breadcrumb">
+    <span class="breadcrumb-item">Home</span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item">Components</span>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-item" style="color: var(--Color-Text-Body); font-weight: 500;">Breadcrumb</span>
+</div>`,
+            "Button Group": `
+<div style="display: flex;">
+    <button class="btn-outline" style="border-radius: var(--Effect-Radius-MD) 0 0 var(--Effect-Radius-MD);">Left</button>
+    <button class="btn-outline" style="border-radius: 0; border-left: none;">Middle</button>
+    <button class="btn-outline" style="border-radius: 0 var(--Effect-Radius-MD) var(--Effect-Radius-MD) 0; border-left: none;">Right</button>
+</div>`,
+            "Button": `
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+    <button class="btn-primary">Primary Button</button>
+    <button class="btn-secondary">Secondary Button</button>
+    <button class="btn-outline">Outline Button</button>
+    <button class="btn-ghost">Ghost Button</button>
+    <button class="btn-destructive">Destructive</button>
+</div>`,
+            "Calendar": `
+<div class="calendar">
+    <div class="calendar-header">
+        <span style="font-weight: 500;">December 2025</span>
+        <div style="display: flex; gap: 4px;">
+            <i class="ti ti-chevron-left" style="cursor: pointer;"></i>
+            <i class="ti ti-chevron-right" style="cursor: pointer;"></i>
+        </div>
+    </div>
+    <div class="calendar-grid">
+        <div class="calendar-weekday">Su</div><div class="calendar-weekday">Mo</div><div class="calendar-weekday">Tu</div><div class="calendar-weekday">We</div><div class="calendar-weekday">Th</div><div class="calendar-weekday">Fr</div><div class="calendar-weekday">Sa</div>
+        <div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell empty"></div><div class="calendar-cell">1</div><div class="calendar-cell">2</div><div class="calendar-cell">3</div><div class="calendar-cell">4</div>
+        <div class="calendar-cell">5</div><div class="calendar-cell">6</div><div class="calendar-cell">7</div><div class="calendar-cell">8</div><div class="calendar-cell">9</div><div class="calendar-cell">10</div><div class="calendar-cell">11</div>
+        <div class="calendar-cell">12</div><div class="calendar-cell">13</div><div class="calendar-cell">14</div><div class="calendar-cell">15</div><div class="calendar-cell">16</div><div class="calendar-cell">17</div><div class="calendar-cell">18</div>
+        <div class="calendar-cell">19</div><div class="calendar-cell">20</div><div class="calendar-cell">21</div><div class="calendar-cell">22</div><div class="calendar-cell selected">23</div><div class="calendar-cell">24</div><div class="calendar-cell">25</div>
+        <div class="calendar-cell">26</div><div class="calendar-cell">27</div><div class="calendar-cell">28</div><div class="calendar-cell">29</div><div class="calendar-cell">30</div><div class="calendar-cell">31</div><div class="calendar-cell empty"></div>
+    </div>
+</div>`,
+            "Card": `
+<div class="card" style="width: 350px;">
+    <div class="card-header">
+        <h3 class="card-title">Create project</h3>
+        <p class="card-description">Deploy your new project in one-click.</p>
+    </div>
+    <div class="card-content">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <label class="text-sm font-medium">Name</label>
+                <input type="text" class="input" placeholder="Name of your project">
+            </div>
+        </div>
+    </div>
+    <div class="card-footer" style="display: flex; justify-content: space-between;">
+        <button class="btn-outline">Cancel</button>
+        <button class="btn-primary">Deploy</button>
+    </div>
+</div>`,
+            "Carousel": `
+<div style="display: flex; align-items: center; gap: 16px; width: 100%; max-width: 400px; justify-content: center;">
+    <button class="btn-outline" style="width: 40px; height: 40px; padding: 0;"><i class="ti ti-chevron-left"></i></button>
+    <div class="card" style="width: 200px; height: 200px; display: flex; align-items: center; justify-content: center;">
+        <span style="font-size: 48px; font-weight: 600;">1</span>
+    </div>
+    <button class="btn-outline" style="width: 40px; height: 40px; padding: 0;"><i class="ti ti-chevron-right"></i></button>
+</div>`,
+            "Chart": `
+<div class="card" style="width: 100%; max-width: 500px; padding: 24px;">
+    <div style="margin-bottom: 24px;">
+        <h3 style="font-size: 16px; font-weight: 600;">Total Revenue</h3>
+        <p style="font-size: 14px; color: var(--Color-Text-Muted);">$15,231.89</p>
+    </div>
+    <div style="display: flex; align-items: flex-end; gap: 8px; height: 200px;">
+        <div style="flex: 1; background: var(--Color-Text-Primary); height: 40%; border-radius: 4px 4px 0 0; opacity: 0.2;"></div>
+        <div style="flex: 1; background: var(--Color-Text-Primary); height: 70%; border-radius: 4px 4px 0 0;"></div>
+        <div style="flex: 1; background: var(--Color-Text-Primary); height: 50%; border-radius: 4px 4px 0 0; opacity: 0.2;"></div>
+        <div style="flex: 1; background: var(--Color-Text-Primary); height: 90%; border-radius: 4px 4px 0 0; opacity: 0.2;"></div>
+        <div style="flex: 1; background: var(--Color-Text-Primary); height: 60%; border-radius: 4px 4px 0 0; opacity: 0.2;"></div>
+        <div style="flex: 1; background: var(--Color-Text-Primary); height: 80%; border-radius: 4px 4px 0 0; opacity: 0.2;"></div>
+    </div>
+</div>`,
+            "Checkbox": `
+<div style="display: flex; flex-direction: column; gap: 16px;">
+    <div class="checkbox-wrapper">
+        <div class="checkbox-box checked"><i class="ti ti-check" style="font-size: 12px;"></i></div>
+        <label style="font-size: 14px; font-weight: 500; cursor: pointer;">Accept terms and conditions</label>
+    </div>
+    <div class="checkbox-wrapper">
+        <div class="checkbox-box"></div>
+        <label style="font-size: 14px; color: var(--Color-Text-Muted); cursor: pointer;">Subscribe to newsletter</label>
+    </div>
+</div>`,
+            "Collapsible": `
+<div style="width: 350px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 8px 0;">
+        <h4 style="font-size: 14px; font-weight: 600;">@peduarte starred 3 repositories</h4>
+        <button class="btn-ghost" style="width: 32px; height: 32px; padding: 0;"><i class="ti ti-chevrons-up-down"></i></button>
+    </div>
+    <div style="border: 1px solid var(--Color-Divider); border-radius: 4px; padding: 8px; margin-bottom: 8px; font-size: 14px;">@radix-ui/primitives</div>
+    <div style="border: 1px solid var(--Color-Divider); border-radius: 4px; padding: 8px; margin-bottom: 8px; font-size: 14px;">@radix-ui/colors</div>
+    <div style="border: 1px solid var(--Color-Divider); border-radius: 4px; padding: 8px; font-size: 14px;">@stitches/react</div>
+</div>`,
+            "Combobox": `
+<div class="popover-content-mock" style="width: 200px; padding: 4px;">
+    <div style="display: flex; align-items: center; gap: 8px; padding: 8px; border-bottom: 1px solid var(--Color-Divider); margin-bottom: 4px;">
+        <i class="ti ti-search" style="color: var(--Color-Text-Muted);"></i>
+        <input style="border: none; outline: none; background: transparent; font-size: 14px; width: 100%;" placeholder="Search framework...">
+    </div>
+    <div class="command-item"><i class="ti ti-check" style="opacity: 1;"></i> Next.js</div>
+    <div class="command-item"><i class="ti ti-check" style="opacity: 0;"></i> SvelteKit</div>
+    <div class="command-item"><i class="ti ti-check" style="opacity: 0;"></i> Nuxt.js</div>
+    <div class="command-item"><i class="ti ti-check" style="opacity: 0;"></i> Remix</div>
+</div>`,
+            "Command": `
+<div class="command-mock">
+    <div style="display: flex; align-items: center; border-bottom: 1px solid var(--Color-Divider); padding: 0 16px;">
+        <i class="ti ti-search" style="color: var(--Color-Text-Muted);"></i>
+        <input class="command-input" placeholder="Type a command or search...">
+    </div>
+    <div class="command-group">
+        <div class="command-group-heading">Suggestions</div>
+        <div class="command-item"><i class="ti ti-calendar"></i> <span>Calendar</span></div>
+        <div class="command-item"><i class="ti ti-mood-smile"></i> <span>Search Emoji</span></div>
+        <div class="command-item"><i class="ti ti-calculator"></i> <span>Calculator</span></div>
+    </div>
+    <div class="command-group">
+        <div class="command-group-heading">Settings</div>
+        <div class="command-item"><i class="ti ti-user"></i> <span>Profile</span> <span class="command-shortcut">⌘P</span></div>
+        <div class="command-item"><i class="ti ti-credit-card"></i> <span>Billing</span> <span class="command-shortcut">⌘B</span></div>
+        <div class="command-item"><i class="ti ti-settings"></i> <span>Settings</span> <span class="command-shortcut">⌘S</span></div>
+    </div>
+</div>`,
+            "Context Menu": `
+<div class="context-menu-area">
+    Right click here
+</div>`,
+            "Data Table": `
+<div style="width: 100%; border: 1px solid var(--Color-Divider); border-radius: var(--Effect-Radius-MD);">
+    <div style="display: flex; align-items: center; padding: 16px; border-bottom: 1px solid var(--Color-Divider);">
+        <input class="input" placeholder="Filter emails..." style="max-width: 300px;">
+        <button class="btn-outline" style="margin-left: auto;">Columns <i class="ti ti-chevron-down"></i></button>
+    </div>
+    <table class="table-mock" style="width: 100%;">
+        <thead>
+            <tr>
+                <th style="padding-left: 16px;"><div class="checkbox-box"></div></th>
+                <th>Status</th>
+                <th>Email</th>
+                <th style="text-align: right; padding-right: 16px;">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding-left: 16px;"><div class="checkbox-box"></div></td>
+                <td>Success</td>
+                <td>ken99@yahoo.com</td>
+                <td style="text-align: right; padding-right: 16px;">$316.00</td>
+            </tr>
+             <tr>
+                <td style="padding-left: 16px;"><div class="checkbox-box"></div></td>
+                <td>Success</td>
+                <td>abe45@gmail.com</td>
+                <td style="text-align: right; padding-right: 16px;">$242.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="display: flex; align-items: center; justify-content: flex-end; padding: 16px; gap: 8px;">
+        <button class="btn-outline" disabled>Previous</button>
+        <button class="btn-outline">Next</button>
+    </div>
+</div>`,
+            "Date Picker": `
+<div class="date-picker-trigger">
+    <i class="ti ti-calendar"></i>
+    <span>Pick a date</span>
+</div>`,
+            "Dialog": `
+<div class="dialog-mock">
+    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">Edit profile</h3>
+    <p style="font-size: 14px; color: var(--Color-Text-Muted); margin-bottom: 20px;">Make changes to your profile here. Click save when you're done.</p>
+    <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px;">
+        <div style="display: grid; grid-template-columns: 80px 1fr; align-items: center; gap: 16px;">
+            <label style="font-size: 14px; font-weight: 500; text-align: right;">Name</label>
+            <input class="input" value="Pedro Duarte">
+        </div>
+        <div style="display: grid; grid-template-columns: 80px 1fr; align-items: center; gap: 16px;">
+            <label style="font-size: 14px; font-weight: 500; text-align: right;">Username</label>
+            <input class="input" value="@peduarte">
+        </div>
+    </div>
+    <div style="display: flex; justify-content: flex-end;">
+        <button class="btn-primary">Save changes</button>
+    </div>
+</div>`,
+            "Drawer": `
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+    <button class="btn-outline">Open Drawer</button>
+    <div style="border: 1px solid var(--Color-Divider); border-radius: var(--Effect-Radius-MD); padding: 16px; width: 100%; max-width: 400px; text-align: center; color: var(--Color-Text-Muted);">
+        (Drawer content usually slides up from bottom)
+    </div>
+</div>`,
+            "Dropdown Menu": `
+<div class="popover-content-mock" style="width: 200px; padding: 4px;">
+    <div style="padding: 6px 12px; font-size: 14px; font-weight: 600;">My Account</div>
+    <div class="separator horizontal" style="margin: 4px 0;"></div>
+    <div class="command-item">Profile <span class="command-shortcut">⇧⌘P</span></div>
+    <div class="command-item">Billing <span class="command-shortcut">⌘B</span></div>
+    <div class="command-item">Settings <span class="command-shortcut">⌘S</span></div>
+    <div class="separator horizontal" style="margin: 4px 0;"></div>
+    <div class="command-item">Log out <span class="command-shortcut">⇧⌘Q</span></div>
+</div>`,
+            "Empty": `
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 300px; text-align: center; border: 1px dashed var(--Color-Divider); border-radius: var(--Effect-Radius-MD); width: 100%;">
+    <div style="width: 100px; height: 100px; background: var(--Color-Divider); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+        <i class="ti ti-box" style="font-size: 40px; color: var(--Color-Text-Muted);"></i>
+    </div>
+    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 8px;">No data available</h3>
+    <p style="color: var(--Color-Text-Muted); margin-bottom: 20px;">You can create a new item to get started.</p>
+    <button class="btn-primary">Create Item</button>
+</div>`,
+            "Field": `
+<div style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 300px;">
+    <label style="font-size: 14px; font-weight: 500;">Username</label>
+    <input class="input" placeholder="Enter your username">
+    <p style="font-size: 12px; color: var(--Color-Text-Muted);">This is your public display name.</p>
+</div>`,
+            "Form": `
+<form style="display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: 400px;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+        <label style="font-size: 14px; font-weight: 500;">Username</label>
+        <input class="input" placeholder="shadcn">
+        <p style="font-size: 12px; color: var(--Color-Text-Muted);">This is your public display name.</p>
+    </div>
+    <button class="btn-primary" type="button">Submit</button>
+</form>`,
+            "Hover Card": `
+<div style="display: flex; justify-content: center;">
+    <a href="#" style="font-size: 14px; font-weight: 500; text-decoration: underline;">@nextjs</a>
+</div>
+<!-- Mocking the content that would appear on hover -->
+<div class="popover-content-mock" style="margin-top: 8px; width: 300px;">
+    <div style="display: flex; gap: 16px;">
+        <div class="avatar"><img src="https://github.com/vercel.png" alt="@vercel"></div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 14px; font-weight: 600;">@nextjs</div>
+            <div style="font-size: 14px; color: var(--Color-Text-Muted);">The React Framework – created and maintained by @vercel.</div>
+            <div style="display: flex; gap: 16px; margin-top: 8px; font-size: 12px; color: var(--Color-Text-Muted);">
+                <span><i class="ti ti-calendar"></i> Joined December 2021</span>
+            </div>
+        </div>
+    </div>
+</div>`,
+            "Input Group": `
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px;">
+    <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" class="input" placeholder="Username">
+    </div>
+    <div class="input-group">
+        <input type="text" class="input" placeholder="Recipient's username">
+        <span class="input-group-text" style="border-right: 1px solid var(--Color-Divider); border-left: none; border-radius: 0 var(--Effect-Radius-MD) var(--Effect-Radius-MD) 0;">@example.com</span>
+    </div>
+</div>`,
+            "Input OTP": `
+<div style="display: flex; flex-direction: column; gap: 8px; align-items: center;">
+    <div class="input-otp-group">
+        <div class="input-otp-slot active">2</div>
+        <div class="input-otp-slot">3</div>
+        <div class="input-otp-slot"></div>
+        <div class="input-otp-slot"></div>
+        <div class="input-otp-slot"></div>
+        <div class="input-otp-slot"></div>
+    </div>
+    <p style="font-size: 12px; color: var(--Color-Text-Muted);">Enter the 6-digit code sent to your email.</p>
+</div>`,
+            "Input": `
+<div style="display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+        <label class="text-sm font-medium">Email</label>
+        <input type="email" class="input" placeholder="Email address">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+        <label class="text-sm font-medium">Password</label>
+        <input type="password" class="input" placeholder="Password">
+    </div>
+</div>`,
+            "Item": `
+<div style="display: flex; align-items: center; justify-content: space-between; border: 1px solid var(--Color-Divider); padding: 16px; border-radius: var(--Effect-Radius-MD); width: 100%; max-width: 400px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="width: 40px; height: 40px; background: var(--Color-Divider); border-radius: 50%;"></div>
+        <div>
+            <div style="font-weight: 600; font-size: 14px;">Item Title</div>
+            <div style="font-size: 12px; color: var(--Color-Text-Muted);">Item description goes here.</div>
+        </div>
+    </div>
+    <button class="btn-ghost"><i class="ti ti-dots-vertical"></i></button>
+</div>`,
+            "Kbd": `
+<div style="display: flex; gap: 8px; align-items: center;">
+    <span style="font-size: 14px;">Press</span>
+    <kbd class="kbd">⌘</kbd>
+    <kbd class="kbd">K</kbd>
+    <span style="font-size: 14px;">to search</span>
+</div>`,
+            "Label": `
+<div style="display: flex; align-items: center; gap: 8px;">
+    <div class="checkbox-box"><i class="ti ti-check" style="font-size: 12px; opacity: 0;"></i></div>
+    <label class="label">Accept terms and conditions</label>
+</div>`,
+            "Menubar": `
+<div class="menubar">
+    <div class="menubar-item">File</div>
+    <div class="menubar-item">Edit</div>
+    <div class="menubar-item">View</div>
+    <div class="menubar-item">Profiles</div>
+</div>`,
+            "Native Select": `
+<div style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 300px;">
+    <label style="font-size: 14px; font-weight: 500;">Native Select</label>
+    <select class="input" style="appearance: auto;">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </select>
+</div>`,
+            "Navigation Menu": `
+<div style="display: flex; gap: 4px; padding: 4px; background: var(--Color-Background-Body); border-radius: var(--Effect-Radius-MD); border: 1px solid var(--Color-Divider); display: inline-flex;">
+    <button class="btn-ghost" style="font-size: 14px;">Getting Started</button>
+    <button class="btn-ghost" style="font-size: 14px;">Components</button>
+    <button class="btn-ghost" style="font-size: 14px;">Documentation</button>
+</div>`,
+            "Pagination": `
+<div class="pagination">
+    <div class="pagination-item"><i class="ti ti-chevron-left"></i></div>
+    <div class="pagination-item">1</div>
+    <div class="pagination-item active">2</div>
+    <div class="pagination-item">3</div>
+    <div class="pagination-item">...</div>
+    <div class="pagination-item"><i class="ti ti-chevron-right"></i></div>
+</div>`,
+            "Popover": `
+<div style="display: flex; justify-content: center;">
+    <button class="btn-outline">Open Popover</button>
+</div>
+<!-- Mocking the content that would appear -->
+<div class="popover-content-mock" style="margin-top: 8px;">
+    <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">Dimensions</div>
+    <div style="font-size: 12px; color: var(--Color-Text-Muted); margin-bottom: 12px;">Set the dimensions for the layer.</div>
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label style="font-size: 12px;">Width</label>
+            <input class="input" value="100%" style="height: 24px; width: 80px;">
+        </div>
+         <div style="display: flex; align-items: center; justify-content: space-between;">
+            <label style="font-size: 12px;">Height</label>
+            <input class="input" value="25px" style="height: 24px; width: 80px;">
+        </div>
+    </div>
+</div>`,
+            "Progress": `
+<div class="progress-track">
+    <div class="progress-fill"></div>
+</div>`,
+            "Radio Group": `
+<div class="radio-group">
+    <div class="radio-item">
+        <div class="radio-circle"><div class="radio-dot"></div></div>
+        <label style="font-size: 14px; font-weight: 500;">Default</label>
+    </div>
+    <div class="radio-item">
+        <div class="radio-circle"></div>
+        <label style="font-size: 14px; font-weight: 500;">Comfortable</label>
+    </div>
+    <div class="radio-item">
+        <div class="radio-circle"></div>
+        <label style="font-size: 14px; font-weight: 500;">Compact</label>
+    </div>
+</div>`,
+            "Resizable": `
+<div class="resizable-mock">
+    <div class="resizable-panel" style="width: 50%;">One</div>
+    <div class="resizable-handle"></div>
+    <div class="resizable-panel" style="width: 50%;">Two</div>
+</div>`,
+            "Scroll Area": `
+<div class="scroll-area-mock">
+    <div style="font-size: 14px; font-weight: 600; margin-bottom: 12px;">Tags</div>
+    <div class="separator horizontal" style="margin-bottom: 12px;"></div>
+    <div class="scroll-area-content">
+        <div style="font-size: 14px;">v1.2.0-beta.50</div>
+        <div class="separator horizontal"></div>
+        <div style="font-size: 14px;">v1.2.0-beta.49</div>
+        <div class="separator horizontal"></div>
+        <div style="font-size: 14px;">v1.2.0-beta.48</div>
+        <div class="separator horizontal"></div>
+        <div style="font-size: 14px;">v1.2.0-beta.47</div>
+        <div class="separator horizontal"></div>
+        <div style="font-size: 14px;">v1.2.0-beta.46</div>
+    </div>
+</div>`,
+            "Select": `
+<div class="select-trigger">
+    <span>Select a fruit</span>
+    <i class="ti ti-chevron-down" style="opacity: 0.5;"></i>
+</div>`,
+            "Separator": `
+<div style="width: 300px; display: flex; flex-direction: column; gap: 16px;">
+    <div style="font-size: 14px;">
+        <div style="font-weight: 600;">Radix Primitives</div>
+        <div style="color: var(--Color-Text-Muted);">An open-source UI component library.</div>
+    </div>
+    <div class="separator horizontal"></div>
+    <div style="display: flex; align-items: center; gap: 16px; font-size: 14px; height: 20px;">
+        <div>Blog</div>
+        <div class="separator vertical"></div>
+        <div>Docs</div>
+        <div class="separator vertical"></div>
+        <div>Source</div>
+    </div>
+</div>`,
+            "Sheet": `
+<div style="display: flex; justify-content: center;">
+    <button class="btn-outline">Open Sheet</button>
+</div>
+<!-- Mock Sheet Content -->
+<div class="sheet-side" style="display: block; position: relative; top: auto; right: auto; bottom: auto; margin-top: 16px; box-shadow: var(--Effect-Shadow-MD); height: 400px;">
+    <div style="font-size: 18px; font-weight: 600; margin-bottom: 4px;">Edit profile</div>
+    <p style="font-size: 14px; color: var(--Color-Text-Muted); margin-bottom: 24px;">Make changes to your profile here.</p>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: grid; grid-template-columns: 80px 1fr; align-items: center; gap: 16px;">
+            <label style="font-size: 14px; font-weight: 500; text-align: right;">Name</label>
+            <input class="input" value="Pedro Duarte">
+        </div>
+        <div style="display: grid; grid-template-columns: 80px 1fr; align-items: center; gap: 16px;">
+            <label style="font-size: 14px; font-weight: 500; text-align: right;">Username</label>
+            <input class="input" value="@peduarte">
+        </div>
+    </div>
+    <div style="margin-top: 24px; display: flex; justify-content: flex-end;">
+        <button class="btn-primary">Save changes</button>
+    </div>
+</div>`,
+            "Sidebar": `
+<div style="display: flex; height: 300px; border: 1px solid var(--Color-Divider); border-radius: var(--Effect-Radius-MD); overflow: hidden; width: 100%; max-width: 600px;">
+    <div style="width: 200px; background: var(--Color-Background-Body); border-right: 1px solid var(--Color-Divider); padding: 16px;">
+        <div style="font-weight: 600; margin-bottom: 16px;">My App</div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+            <div class="sidebar-item active">Inbox</div>
+            <div class="sidebar-item">Drafts</div>
+            <div class="sidebar-item">Sent</div>
+        </div>
+    </div>
+    <div style="flex: 1; padding: 16px;">
+        <h3 style="font-size: 18px; font-weight: 600;">Inbox</h3>
+    </div>
+</div>`,
+            "Skeleton": `
+<div style="display: flex; align-items: center; gap: 16px;">
+    <div class="skeleton" style="width: 48px; height: 48px; border-radius: 50%;"></div>
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+        <div class="skeleton" style="width: 250px; height: 20px;"></div>
+        <div class="skeleton" style="width: 200px; height: 20px;"></div>
+    </div>
+</div>`,
+            "Slider": `
+<div class="slider-track-mock">
+    <div class="slider-range-mock"></div>
+    <div class="slider-thumb-mock"></div>
+</div>`,
+            "Sonner": `
+<div class="sonner-mock">
+    <i class="ti ti-circle-check" style="color: var(--Functional-Solid-Success500);"></i>
+    <div style="flex: 1;">
+        <div style="font-weight: 600;">Event has been created</div>
+        <div style="opacity: 0.9;">Sunday, December 03, 2023 at 9:00 AM</div>
+    </div>
+    <button style="background: transparent; border: none; color: inherit; font-size: 14px; font-weight: 600;">Undo</button>
+</div>`,
+            "Spinner": `
+<div style="display: flex; gap: 16px; align-items: center;">
+    <div class="spinner"></div>
+    <span style="color: var(--Color-Text-Muted);">Loading...</span>
+</div>`,
+            "Switch": `
+<div style="display: flex; align-items: center; gap: 16px;">
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <label class="switch-label">Airplane Mode</label>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
+        <label class="switch-label">Bluetooth</label>
+    </div>
+</div>`,
+            "Table": `
+<table class="table-mock">
+    <thead>
+        <tr>
+            <th>Invoice</th>
+            <th>Status</th>
+            <th>Method</th>
+            <th style="text-align: right;">Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>INV001</td>
+            <td>Paid</td>
+            <td>Credit Card</td>
+            <td style="text-align: right;">$250.00</td>
+        </tr>
+        <tr>
+            <td>INV002</td>
+            <td>Pending</td>
+            <td>PayPal</td>
+            <td style="text-align: right;">$150.00</td>
+        </tr>
+        <tr>
+            <td>INV003</td>
+            <td>Unpaid</td>
+            <td>Bank Transfer</td>
+            <td style="text-align: right;">$350.00</td>
+        </tr>
+    </tbody>
+</table>`,
+            "Tabs": `
+<div style="display: flex; flex-direction: column; gap: 16px;">
+    <div class="tabs-mock">
+        <div class="tabs-trigger-mock active">Account</div>
+        <div class="tabs-trigger-mock">Password</div>
+    </div>
+    <div class="card" style="padding: 24px;">
+        <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 4px;">Account</h3>
+        <p style="font-size: 14px; color: var(--Color-Text-Muted);">Make changes to your account here. Click save when you're done.</p>
+    </div>
+</div>`,
+            "Textarea": `
+<div style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 400px;">
+    <label class="text-sm font-medium">Bio</label>
+    <textarea class="input" style="height: 100px; padding: 12px; resize: vertical;" placeholder="Type your message here."></textarea>
+    <p class="text-sm" style="color: var(--Color-Text-Muted);">Your message will be copied to the support team.</p>
+</div>`,
+            "Toast": `
+<div class="card" style="width: 300px; padding: 16px; display: flex; justify-content: space-between; align-items: flex-start; box-shadow: var(--Effect-Shadow-MD);">
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+        <div style="font-weight: 600; font-size: 14px;">Scheduled: Catch up</div>
+        <div style="font-size: 12px; color: var(--Color-Text-Muted);">Friday, February 10, 2023 at 5:57 PM</div>
+    </div>
+    <button class="toggle" style="padding: 4px;"><i class="ti ti-x" style="font-size: 14px;"></i></button>
+</div>`,
+            "Toggle Group": `
+<div class="toggle-group">
+    <button class="toggle-group-item"><i class="ti ti-bold"></i></button>
+    <button class="toggle-group-item active"><i class="ti ti-italic"></i></button>
+    <button class="toggle-group-item"><i class="ti ti-underline"></i></button>
+</div>`,
+            "Toggle": `
+<div style="display: flex; gap: 8px;">
+    <button class="toggle"><i class="ti ti-bold"></i></button>
+    <button class="toggle pressed"><i class="ti ti-italic"></i></button>
+    <button class="toggle"><i class="ti ti-underline"></i></button>
+</div>`,
+            "Tooltip": `
+<div style="padding: 20px;">
+    <span class="tooltip-trigger">
+        Hover me
+        <span class="tooltip-content">Add to library</span>
+    </span>
+</div>`,
+            "Typography": `
+<div style="max-width: 600px;">
+    <h1 style="font-size: 48px; font-weight: 800; line-height: 1.1; margin-bottom: 24px;">The Joke Tax Chronicles</h1>
+    <p style="font-size: 20px; line-height: 1.6; color: var(--Color-Text-Muted); margin-bottom: 24px;">
+        Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on his throne. One day, his advisors came to him with a problem: the kingdom was running out of money.
+    </p>
+    <h2 style="font-size: 30px; font-weight: 600; margin-top: 40px; margin-bottom: 16px; border-bottom: 1px solid var(--Color-Divider); padding-bottom: 8px;">The King's Plan</h2>
+    <p style="line-height: 1.6; margin-bottom: 16px;">
+        The king thought long and hard, and finally came up with a brilliant plan: he would tax the jokes in the kingdom.
+    </p>
+    <blockquote style="border-left: 2px solid var(--Color-Text-Primary); padding-left: 16px; font-style: italic; margin: 24px 0;">
+        "After all," he said, "everyone enjoys a good joke, so it's only fair that they should pay for the privilege."
+    </blockquote>
+</div>`
+        };
+
+        let activeComponentName = '';
+
+        function initComponents() {
+            const nav = document.getElementById('component-list');
+            const display = document.getElementById('component-display');
+            if (!nav || !display) return;
+
+            // Render list
+            componentList.forEach((name, index) => {
+                const item = document.createElement('div');
+                item.className = 'sidebar-item';
+                item.innerText = name;
+                item.onclick = () => selectComponent(name, item);
+                nav.appendChild(item);
+            });
+
+            // Select first by default
+            if (componentList.length > 0) {
+                selectComponent(componentList[0], nav.firstElementChild);
+            }
+        }
+
+        function selectComponent(name, itemElement) {
+            activeComponentName = name;
+            // Update active state
+            document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+            if (itemElement) {
+                itemElement.classList.add('active');
+            } else {
+                // Find element if not passed
+                const items = document.querySelectorAll('.sidebar-item');
+                for (let item of items) {
+                    if (item.innerText === name) {
+                        item.classList.add('active');
+                        // Scroll to item
+                        item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        break;
+                    }
+                }
+            }
+
+            const display = document.getElementById('component-display');
+            
+            // Special case for Introduction
+            if (name === "Introduction") {
+                display.innerHTML = componentMocks[name];
+                return;
+            }
+
+            const mockHtml = componentMocks[name] || `<div class="p-4 text-muted">Preview for ${name} is coming soon...</div>`;
+            
+            // Escape HTML for code view
+            const codeHtml = escapeHtml(mockHtml.trim());
+
+            display.innerHTML = `
+                <div class="component-header">
+                    <h2>${name}</h2>
+                    <p class="component-description">Displays a ${name.toLowerCase()} component.</p>
+                </div>
+                
+                <div class="component-preview-card">
+                    <div class="preview-area">
+                        ${mockHtml}
+                    </div>
+                    <div class="code-area">
+                        <button class="copy-code-btn" onclick="copyCode(this)">Copy</button>
+                        <pre class="code-block"><code>${codeHtml}</code></pre>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--Color-Divider);">
+                    <button class="btn-outline" onclick="navigateComponent(-1)">Previous</button>
+                    <button class="btn-outline" onclick="navigateComponent(1)">Next</button>
+                </div>
+            `;
+        }
+
+        function copyPage() {
+            copyToClipboard(window.location.href);
+        }
+
+        function navigateComponent(direction) {
+            const currentIndex = componentList.indexOf(activeComponentName);
+            if (currentIndex === -1) return;
+            
+            const newIndex = currentIndex + direction;
+            if (newIndex >= 0 && newIndex < componentList.length) {
+                const name = componentList[newIndex];
+                selectComponent(name);
+            }
+        }
+
+        function escapeHtml(text) {
+          return text
+              .replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;")
+              .replace(/"/g, "&quot;")
+              .replace(/'/g, "&#039;");
+        }
+
+        function copyCode(btn) {
+            const code = btn.nextElementSibling.innerText;
+            copyToClipboard(code);
+            const originalText = btn.innerText;
+            btn.innerText = 'Copied!';
+            setTimeout(() => btn.innerText = originalText, 2000);
+        }
+
+        // --- Initialization ---
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof allIcons !== 'undefined') {
+                initIcons();
+            } else {
+                console.error('icons-data.js not loaded or empty.');
+                const grid = document.getElementById('icon-grid-container');
+                if(grid) grid.innerHTML = '<p>Error loading icons data.</p>';
+            }
+
+            initColors();
+            initTypeAndEffects();
+            initComponents();
+        });
+
+    </script>
+
+</body>
+
+</html>

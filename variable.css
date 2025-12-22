@@ -1,0 +1,711 @@
+:root {
+  /* ==========================================================================
+     1. 颜色 (Colors)
+     ========================================================================== */
+
+  /* --------------------------------------------------------------------------
+     1.1 Light Theme
+     -------------------------------------------------------------------------- */
+
+  /* Light · 字体 (Fonts / Typography Colors) */
+  --Light-TypographyColor-BodyText: #1E1F22;
+  /* 正文 */
+  --Light-TypographyColor-HeadingText: #171922;
+  /* 标题 */
+  --Light-TypographyColor-MutedText: #6D717A;
+  /* 次级 */
+  --Light-TypographyColor-PlaceholderText: #969CA7;
+  /* 占位 */
+  --Light-TypographyColor-PrimaryText: #3C6EFF;
+  /* 系统色文字 */
+  --Light-TypographyColor-Pro: #FFD791;
+  /* 高亮提示 */
+  --Light-TypographyColor-WhiteText: #FFFFFF;
+  /* 白色 */
+
+  --Color-Light-Text-Body: #1E1F22;
+  --Color-Light-Text-Heading: #171922;
+  --Color-Light-Text-Muted: #6D717A;
+  --Color-Light-Text-Placeholder: #969CA7;
+  --Color-Light-Text-Primary: #3C6EFF;
+  --Color-Light-Text-White: #FFFFFF;
+
+  /* Light · 不透明 (Opaque / Solid Colors) */
+  --Light-SolidColor-Extra-BodyBackground: #F9FCFF;
+  /* 页面主体背景 */
+  --Light-SolidColor-Extra-HeaderBackground: #ECECEE;
+  /* 页头背景 */
+  --Light-SolidColor-Extra-Divider: #DBDADE;
+  /* 分隔线 */
+  --Light-SolidColor-Extra-CardBackground: #FFFFFF;
+  /* 卡片背景 */
+  --Light-SolidColor-Extra-Dark: #E7E7EE;
+  /* Body 背景下的悬停色 */
+  --Light-SolidColor-Extra-Light: #F1F1F9;
+  /* Card 背景下的悬停色 */
+  --Itemselected: #02040E;
+  /* 浅色主题选中态 */
+
+  --Light-SolidColor-Gray100: #F6F6F7;
+  --Light-SolidColor-Gray200: #DBDADE;
+  --Light-SolidColor-Gray300: #C9C7CE;
+  --Light-SolidColor-Gray400: #B7B5BE;
+  --Light-SolidColor-Gray500: #A5A3AE;
+  --Light-SolidColor-Gray600: #93909D;
+  --Light-SolidColor-Gray700: #817D8D;
+  --Light-SolidColor-Gray800: #6F6B7D;
+  --Light-SolidColor-Gray900: #000422;
+  /* 最新值 */
+
+  --Color-Light-Background-Body: #F9FCFF;
+  --Color-Light-Background-Header: #ECECEE;
+  --Color-Light-Background-Card: #FFFFFF;
+
+  --Color-Light-Divider: #DBDADE;
+  --Color-Light-Selected: #02040E;
+  --Color-Light-Hover-OnBody: #E7E7EE;
+  --Color-Light-Hover-OnCard: #F1F1F9;
+
+  --Color-Light-Gray-100: #F6F6F7;
+  --Color-Light-Gray-200: #DBDADE;
+  --Color-Light-Gray-300: #C9C7CE;
+  --Color-Light-Gray-400: #B7B5BE;
+  --Color-Light-Gray-500: #A5A3AE;
+  --Color-Light-Gray-600: #93909D;
+  --Color-Light-Gray-700: #817D8D;
+  --Color-Light-Gray-800: #6F6B7D;
+  --Color-Light-Gray-900: #000422;
+
+  /* Light · 透明 (Transparent / Opacity Colors) */
+  --Light-OpacityColor-Extra-Overlay: rgba(75, 70, 92, 0.68);
+  --Light-OpacityColor-Extra-MenuOpen: rgba(75, 70, 92, 0.06);
+  --Light-OpacityColor-Extra-TableStriped: rgba(75, 70, 92, 0.02);
+  --Light-OpacityColor-Extra-MenuHover: rgba(75, 70, 92, 0.08);
+
+  --Light-OpacityColor-Gray8: rgba(75, 70, 92, 0.08);
+  --Light-OpacityColor-Gray16: rgba(75, 70, 92, 0.16);
+  --Light-OpacityColor-Gray24: rgba(75, 70, 92, 0.24);
+  --Light-OpacityColor-Gray32: rgba(75, 70, 92, 0.32);
+  --Light-OpacityColor-Gray40: rgba(75, 70, 92, 0.40);
+  --Light-OpacityColor-Gray48: rgba(75, 70, 92, 0.48);
+
+  --Light-OpacityColor-Primary8: rgba(22, 93, 255, 0.08);
+  --Light-OpacityColor-Primary16: rgba(22, 93, 255, 0.16);
+  --Light-OpacityColor-Primary24: rgba(22, 93, 255, 0.24);
+  --Light-OpacityColor-Primary32: rgba(22, 93, 255, 0.32);
+  --Light-OpacityColor-Primary40: rgba(22, 93, 255, 0.40);
+  --Light-OpacityColor-Primary48: rgba(22, 93, 255, 0.48);
+
+  --Color-Light-Overlay: rgba(75, 70, 92, 0.68);
+
+  /* --------------------------------------------------------------------------
+     1.2 Dark Theme
+     -------------------------------------------------------------------------- */
+
+  /* Dark · 字体 (Fonts / Typography Colors) */
+  --Dark-TypographyColor-BodyText: #B6BEE3;
+  /* 正文 */
+  --Dark-TypographyColor-HeadingText: #CFD3EC;
+  /* 标题 */
+  --Dark-TypographyColor-MutedText: #7883BB;
+  /* 次级 */
+  --Dark-TypographyColor-PlaceholderText: #5E6692;
+  /* 深色主色调 */
+  --Dark-TypographyColor-PrimaryText: #3C6EFF;
+  /* 深色主色调 (Modified to match Light mode per user request) */
+  --Dark-TypographyColor-WhiteText: #EAEAEA;
+  /* 深色下的白 */
+
+  --Color-Dark-Text-Body: #B6BEE3;
+  --Color-Dark-Text-Heading: #CFD3EC;
+  --Color-Dark-Text-Muted: #7883BB;
+  --Color-Dark-Text-Placeholder: #5E6692;
+  --Color-Dark-Text-Primary: #3C6EFF;
+  --Color-Dark-Text-White: #EAEAEA;
+
+  /* Dark · 不透明 (Opaque / Solid Colors) */
+  --Dark-SolidColor-Extra-BodyBackground: #25293C;
+  /* 页面主体背景 */
+  --Dark-SolidColor-Extra-HeaderBackground: #1F2233;
+  /* 页头背景 */
+  --Dark-SolidColor-Extra-CardBackground: #2F3349;
+  /* 卡片背景 */
+  --Dark-SolidColor-Extra-Divider: #434968;
+  /* 分隔线 */
+  --Dark-SolidColor-Extra-Light: #44475B;
+  /* 悬停浅色 */
+  --Dark-SolidColor-Extra-Dark: #D7D8DE;
+  /* 悬停深色 */
+  --itemselected: #1F2233;
+  /* 深色主题选中态 */
+
+  --Dark-SolidColor-Gray100: #E7E9F6;
+  --Dark-SolidColor-Gray200: #CFD3EC;
+  --Dark-SolidColor-Gray300: #B6BEE3;
+  --Dark-SolidColor-Gray400: #AAB2DE;
+  --Dark-SolidColor-Gray500: #8692D0;
+  --Dark-SolidColor-Gray600: #7983BB;
+  --Dark-SolidColor-Gray700: #5E6692;
+  --Dark-SolidColor-Gray800: #4A5072;
+  --Dark-SolidColor-Gray900: #2F3349;
+
+  --Color-Dark-Background-Body: #25293C;
+  --Color-Dark-Background-Header: #1F2233;
+  --Color-Dark-Background-Card: #2F3349;
+
+  --Color-Dark-Divider: #434968;
+  --Color-Dark-Selected: #1F2233;
+  --Color-Dark-Hover-Light: #44475B;
+  --Color-Dark-Hover-Dark: #D7D8DE;
+
+  --Color-Dark-Gray-100: #E7E9F6;
+  --Color-Dark-Gray-200: #CFD3EC;
+  --Color-Dark-Gray-300: #B6BEE3;
+  --Color-Dark-Gray-400: #AAB2DE;
+  --Color-Dark-Gray-500: #8692D0;
+  --Color-Dark-Gray-600: #7983BB;
+  --Color-Dark-Gray-700: #5E6692;
+  --Color-Dark-Gray-800: #4A5072;
+  --Color-Dark-Gray-900: #2F3349;
+
+  /* Dark · 透明 (Transparent / Opacity Colors) */
+  --Dark-OpacityColor-Extra-Overlay: rgba(26, 29, 42, 0.68);
+  --Dark-OpacityColor-Extra-MenuOpen: rgba(134, 146, 208, 0.10);
+  --Dark-OpacityColor-Extra-MenuHover: rgba(134, 146, 208, 0.06);
+  --Dark-OpacityColor-Extra-TableStriped: rgba(134, 146, 208, 0.02);
+
+  --Dark-OpacityColor-Gray8: rgba(134, 146, 208, 0.08);
+  --Dark-OpacityColor-Gray16: rgba(134, 146, 208, 0.16);
+  --Dark-OpacityColor-Gray24: rgba(134, 146, 208, 0.24);
+  --Dark-OpacityColor-Gray32: rgba(134, 146, 208, 0.32);
+  --Dark-OpacityColor-Gray40: rgba(134, 146, 208, 0.40);
+  --Dark-OpacityColor-Gray48: rgba(134, 146, 208, 0.48);
+
+  --Dark-OpacityColor-Primary8: rgba(60, 126, 255, 0.08);
+  --Dark-OpacityColor-Primary16: rgba(60, 126, 255, 0.16);
+  --Dark-OpacityColor-Primary24: rgba(60, 126, 255, 0.24);
+  --Dark-OpacityColor-Primary32: rgba(60, 126, 255, 0.32);
+  --Dark-OpacityColor-Primary40: rgba(60, 126, 255, 0.40);
+  --Dark-OpacityColor-Primary48: rgba(60, 126, 255, 0.48);
+
+  --Color-Dark-Overlay: rgba(26, 29, 42, 0.68);
+
+  /* --------------------------------------------------------------------------
+     1.3 Functional Colors
+     -------------------------------------------------------------------------- */
+
+  /* Functional · 渐变 (Gradients) */
+  --Functional-Gradient-BodyGradient: linear-gradient(150deg, #EAE8FF 0%, #FFE7E8 100%);
+  --Functional-Gradient-Primary: linear-gradient(45deg, #4E46B4 0%, rgba(78, 70, 180, 0.79) 100%);
+  --Functional-Gradient-Secondary: linear-gradient(45deg, #82868B 0%, #9CA0A4 100%);
+  --Functional-Gradient-Success: linear-gradient(45deg, #28C76F 0%, #48DA89 100%);
+  --Functional-Gradient-Info: linear-gradient(45deg, #00CFE8 0%, #1CE7FF 100%);
+  --Functional-Gradient-Warning: linear-gradient(45deg, #FF9F43 0%, #FFB976 100%);
+  --Pro01: linear-gradient(135deg, #CB5EEE 0%, #4BE1EC 100%);
+  --Pro02: linear-gradient(135deg, #F06966 0%, #FAD6A6 100%);
+
+  /* Functional · 不透明 (Opaque / Solid Colors) */
+  --Functional-Solid-Secondary100: #E9EAEB;
+  --Functional-Solid-Secondary200: #BFC6D3;
+  --Functional-Solid-Secondary300: #6D717A;
+  --Functional-Solid-Secondary400: #6D717A;
+  --Functional-Solid-Secondary500: #45484E;
+  --Functional-Solid-Secondary600: #1E1F22;
+  --Functional-Solid-Secondary700: #171922;
+  --Functional-Solid-Secondary800: #0F1222;
+  --Functional-Solid-Secondary900: #080B22;
+
+  --Functional-Solid-Primary100: #E8F3FF;
+  --Functional-Solid-Primary200: #BEDAFF;
+  --Functional-Solid-Primary300: #94BFFF;
+  --Functional-Solid-Primary400: #6AA1FF;
+  --Functional-Solid-Primary500: #4080FF;
+  --Functional-Solid-Primary600: #165DFF;
+  --Functional-Solid-Primary700: #0E42D2;
+  --Functional-Solid-Primary800: #072CA6;
+  --Functional-Solid-Primary900: #031A79;
+
+  --Functional-Solid-Info100: #E8FFFA;
+  --Functional-Solid-Info200: #BFEDE4;
+  --Functional-Solid-Info300: #9ADBD0;
+  --Functional-Solid-Info400: #78CABF;
+  --Functional-Solid-Info500: #40A69F;
+  --Functional-Solid-Info600: #2A908C;
+  --Functional-Solid-Info700: #177979;
+  --Functional-Solid-Info800: #0A6063;
+  --Functional-Solid-Info900: #00474D;
+
+  --Functional-Solid-Success100: #EBFFE8;
+  --Functional-Solid-Success200: #BBE5B8;
+  --Functional-Solid-Success300: #90CB8D;
+  --Functional-Solid-Success400: #69B168;
+  --Functional-Solid-Success500: #2E7D32;
+  --Functional-Solid-Success600: #1F7126;
+  --Functional-Solid-Success700: #13651C;
+  --Functional-Solid-Success800: #085914;
+  --Functional-Solid-Success900: #004D0E;
+
+  --Functional-Solid-Warning100: #FFECD9;
+  --Functional-Solid-Warning200: #FFD9B4;
+  --Functional-Solid-Warning300: #FFC58E;
+  --Functional-Solid-Warning400: #FFB269;
+  --Functional-Solid-Warning500: #FF9F43;
+  --Functional-Solid-Warning600: #E58F3C;
+  --Functional-Solid-Warning700: #D98739;
+  --Functional-Solid-Warning800: #CC7F36;
+  --Functional-Solid-Warning900: #BF7732;
+
+  --Functional-Solid-Danger100: #FFECE8;
+  --Functional-Solid-Danger200: #F6C6BE;
+  --Functional-Solid-Danger300: #EDA097;
+  --Functional-Solid-Danger400: #E57A72;
+  --Functional-Solid-Danger500: #D33030;
+  --Functional-Solid-Danger600: #B11E23;
+  --Functional-Solid-Danger700: #901019;
+  --Functional-Solid-Danger800: #6E0611;
+  --Functional-Solid-Danger900: #4D000A;
+
+  --Color-Functional-Primary-100: #E8F3FF;
+  --Color-Functional-Primary-200: #BEDAFF;
+  --Color-Functional-Primary-300: #94BFFF;
+  --Color-Functional-Primary-400: #6AA1FF;
+  --Color-Functional-Primary-500: #4080FF;
+  --Color-Functional-Primary-600: #165DFF;
+  --Color-Functional-Primary-700: #0E42D2;
+  --Color-Functional-Primary-800: #072CA6;
+  --Color-Functional-Primary-900: #031A79;
+
+  --Color-Functional-Info-100: #E8FFFA;
+  --Color-Functional-Info-200: #BFEDE4;
+  --Color-Functional-Info-300: #9ADBD0;
+  --Color-Functional-Info-400: #78CABF;
+  --Color-Functional-Info-500: #40A69F;
+  --Color-Functional-Info-600: #2A908C;
+  --Color-Functional-Info-700: #177979;
+  --Color-Functional-Info-800: #0A6063;
+  --Color-Functional-Info-900: #00474D;
+
+  --Color-Functional-Success-100: #EBFFE8;
+  --Color-Functional-Success-200: #BBE5B8;
+  --Color-Functional-Success-300: #90CB8D;
+  --Color-Functional-Success-400: #69B168;
+  --Color-Functional-Success-500: #2E7D32;
+  --Color-Functional-Success-600: #1F7126;
+  --Color-Functional-Success-700: #13651C;
+  --Color-Functional-Success-800: #085914;
+  --Color-Functional-Success-900: #004D0E;
+
+  --Color-Functional-Warning-100: #FFECD9;
+  --Color-Functional-Warning-200: #FFD9B4;
+  --Color-Functional-Warning-300: #FFC58E;
+  --Color-Functional-Warning-400: #FFB269;
+  --Color-Functional-Warning-500: #FF9F43;
+  --Color-Functional-Warning-600: #E58F3C;
+  --Color-Functional-Warning-700: #D98739;
+  --Color-Functional-Warning-800: #CC7F36;
+  --Color-Functional-Warning-900: #BF7732;
+
+  --Color-Functional-Danger-100: #FFECE8;
+  --Color-Functional-Danger-200: #F6C6BE;
+  --Color-Functional-Danger-300: #EDA097;
+  --Color-Functional-Danger-400: #E57A72;
+  --Color-Functional-Danger-500: #D33030;
+  --Color-Functional-Danger-600: #B11E23;
+  --Color-Functional-Danger-700: #901019;
+  --Color-Functional-Danger-800: #6E0611;
+  --Color-Functional-Danger-900: #4D000A;
+
+  /* Functional · 透明 (Transparent / Opacity Colors) */
+  --Functional-Opacity-Primary8: rgba(78, 70, 180, 0.08);
+  --Functional-Opacity-Primary16: rgba(78, 70, 180, 0.16);
+  --Functional-Opacity-Primary24: rgba(78, 70, 180, 0.24);
+  --Functional-Opacity-Primary32: rgba(78, 70, 180, 0.32);
+  --Functional-Opacity-Primary40: rgba(78, 70, 180, 0.40);
+  --Functional-Opacity-Primary48: rgba(78, 70, 180, 0.48);
+
+  --Functional-Opacity-Secondary8: rgba(30, 31, 34, 0.08);
+  --Functional-Opacity-Secondary16: rgba(30, 31, 34, 0.16);
+  --Functional-Opacity-Secondary24: rgba(30, 31, 34, 0.24);
+  --Functional-Opacity-Secondary32: rgba(30, 31, 34, 0.32);
+  --Functional-Opacity-Secondary40: rgba(30, 31, 34, 0.40);
+  --Functional-Opacity-Secondary48: rgba(30, 31, 34, 0.48);
+
+  --Functional-Opacity-Success8: rgba(46, 125, 50, 0.08);
+  --Functional-Opacity-Success16: rgba(46, 125, 50, 0.16);
+  --Functional-Opacity-Success24: rgba(46, 125, 50, 0.24);
+  --Functional-Opacity-Success32: rgba(46, 125, 50, 0.32);
+  --Functional-Opacity-Success40: rgba(46, 125, 50, 0.40);
+  --Functional-Opacity-Success48: rgba(46, 125, 50, 0.48);
+
+  --Functional-Opacity-Info8: rgba(64, 166, 159, 0.08);
+  --Functional-Opacity-Info16: rgba(64, 166, 159, 0.16);
+  --Functional-Opacity-Info24: rgba(64, 166, 159, 0.24);
+  --Functional-Opacity-Info32: rgba(64, 166, 159, 0.32);
+  --Functional-Opacity-Info40: rgba(64, 166, 159, 0.40);
+  --Functional-Opacity-Info48: rgba(64, 166, 159, 0.48);
+
+  --Functional-Opacity-Warning8: rgba(255, 159, 67, 0.08);
+  --Functional-Opacity-Warning16: rgba(255, 159, 67, 0.16);
+  --Functional-Opacity-Warning24: rgba(255, 159, 67, 0.24);
+  --Functional-Opacity-Warning32: rgba(255, 159, 67, 0.32);
+  --Functional-Opacity-Warning40: rgba(255, 159, 67, 0.40);
+  --Functional-Opacity-Warning48: rgba(255, 159, 67, 0.48);
+
+  --Functional-Opacity-Danger8: rgba(211, 48, 48, 0.08);
+  --Functional-Opacity-Danger16: rgba(211, 48, 48, 0.16);
+  --Functional-Opacity-Danger24: rgba(211, 48, 48, 0.24);
+  --Functional-Opacity-Danger32: rgba(211, 48, 48, 0.32);
+  --Functional-Opacity-Danger40: rgba(211, 48, 48, 0.40);
+  --Functional-Opacity-Danger48: rgba(211, 48, 48, 0.48);
+
+  /* ==========================================================================
+     2. 字体 (Fonts)
+     ========================================================================== */
+  /* --------------------------------------------------------------------------
+     2.1 Global Families
+     -------------------------------------------------------------------------- */
+  --Font-Family-Sans: "Source Han Sans", sans-serif;
+  --Font-Family-Code: "Fira Code", monospace;
+
+  /* --------------------------------------------------------------------------
+     2.2 Display
+     -------------------------------------------------------------------------- */
+  /* Display 1 */
+  --Font-Display-1-Family: var(--Font-Family-Sans);
+  --Font-Display-1-Size: 64px;
+  --Font-Display-1-Weight: 600;
+  --Font-Display-1-LineHeight: 84px;
+  --Font-Display-1-Spacing: -1px;
+
+  /* Display 2 */
+  --Font-Display-2-Family: var(--Font-Family-Sans);
+  --Font-Display-2-Size: 56px;
+  --Font-Display-2-Weight: 600;
+  --Font-Display-2-LineHeight: 72px;
+  --Font-Display-2-Spacing: -0.5px;
+
+  /* Display 3 */
+  --Font-Display-3-Family: var(--Font-Family-Sans);
+  --Font-Display-3-Size: 48px;
+  --Font-Display-3-Weight: 600;
+  --Font-Display-3-LineHeight: 60px;
+  --Font-Display-3-Spacing: 0px;
+
+  /* Display 4 */
+  --Font-Display-4-Family: var(--Font-Family-Sans);
+  --Font-Display-4-Size: 40px;
+  --Font-Display-4-Weight: 600;
+  --Font-Display-4-LineHeight: 52px;
+  --Font-Display-4-Spacing: 0.25px;
+
+  /* --------------------------------------------------------------------------
+     2.3 Headings
+     -------------------------------------------------------------------------- */
+  /* H1 */
+  --Font-Heading-H1-Family: var(--Font-Family-Sans);
+  --Font-Heading-H1-Size: 32px;
+  --Font-Heading-H1-Weight: 600;
+  --Font-Heading-H1-LineHeight: 40px;
+  --Font-Heading-H1-Spacing: 0.25px;
+
+  /* H2 */
+  --Font-Heading-H2-Family: var(--Font-Family-Sans);
+  --Font-Heading-H2-Size: 24px;
+  --Font-Heading-H2-Weight: 600;
+  --Font-Heading-H2-LineHeight: 32px;
+  --Font-Heading-H2-Spacing: 0px;
+
+  /* H3 */
+  --Font-Heading-H3-Family: var(--Font-Family-Sans);
+  --Font-Heading-H3-Size: 20px;
+  --Font-Heading-H3-Weight: 600;
+  --Font-Heading-H3-LineHeight: 28px;
+  --Font-Heading-H3-Spacing: 0.15px;
+
+  /* H4 */
+  --Font-Heading-H4-Family: var(--Font-Family-Sans);
+  --Font-Heading-H4-Size: 18px;
+  --Font-Heading-H4-Weight: 600;
+  --Font-Heading-H4-LineHeight: 24px;
+  --Font-Heading-H4-Spacing: 0.15px;
+
+  /* H5 */
+  --Font-Heading-H5-Family: var(--Font-Family-Sans);
+  --Font-Heading-H5-Size: 16px;
+  --Font-Heading-H5-Weight: 600;
+  --Font-Heading-H5-LineHeight: 22px;
+  --Font-Heading-H5-Spacing: 0.1px;
+
+  /* H6 */
+  --Font-Heading-H6-Family: var(--Font-Family-Sans);
+  --Font-Heading-H6-Size: 14px;
+  --Font-Heading-H6-Weight: 600;
+  --Font-Heading-H6-LineHeight: 20px;
+  --Font-Heading-H6-Spacing: 0.1px;
+
+  /* --------------------------------------------------------------------------
+     2.4 Paragraphs
+     -------------------------------------------------------------------------- */
+  /* Paragraph Lead */
+  --Font-Paragraph-Lead-Family: var(--Font-Family-Sans);
+  --Font-Paragraph-Lead-Size: 20px;
+  --Font-Paragraph-Lead-Weight: 400;
+  --Font-Paragraph-Lead-LineHeight: 28px;
+  --Font-Paragraph-Lead-Spacing: 0px;
+
+  /* Paragraph (Default) */
+  --Font-Paragraph-Default-Family: var(--Font-Family-Sans);
+  --Font-Paragraph-Default-Size: 16px;
+  --Font-Paragraph-Default-Weight: 400;
+  --Font-Paragraph-Default-LineHeight: 24px;
+  --Font-Paragraph-Default-Spacing: 0.5px;
+
+  /* Paragraph Medium */
+  --Font-Paragraph-Medium-Family: var(--Font-Family-Sans);
+  --Font-Paragraph-Medium-Size: 16px;
+  --Font-Paragraph-Medium-Weight: 500;
+  --Font-Paragraph-Medium-LineHeight: 24px;
+  --Font-Paragraph-Medium-Spacing: 0.5px;
+
+  /* Paragraph SemiBold */
+  --Font-Paragraph-SemiBold-Family: var(--Font-Family-Sans);
+  --Font-Paragraph-SemiBold-Size: 16px;
+  --Font-Paragraph-SemiBold-Weight: 600;
+  --Font-Paragraph-SemiBold-LineHeight: 24px;
+  --Font-Paragraph-SemiBold-Spacing: 0.5px;
+
+  /* Paragraph Bold */
+  --Font-Paragraph-Bold-Family: var(--Font-Family-Sans);
+  --Font-Paragraph-Bold-Size: 16px;
+  --Font-Paragraph-Bold-Weight: 700;
+  --Font-Paragraph-Bold-LineHeight: 24px;
+  --Font-Paragraph-Bold-Spacing: 0.5px;
+
+  /* --------------------------------------------------------------------------
+     2.5 Paragraph Small
+     -------------------------------------------------------------------------- */
+  /* Paragraph Small */
+  --Font-Paragraph-Small-Family: var(--Font-Family-Sans);
+  --Font-Paragraph-Small-Size: 14px;
+  --Font-Paragraph-Small-Weight: 400;
+  --Font-Paragraph-Small-LineHeight: 20px;
+  --Font-Paragraph-Small-Spacing: 0.25px;
+
+  /* Paragraph Small Medium */
+  --Font-Paragraph-Small-Medium-Family: var(--Font-Family-Sans);
+  --Font-Paragraph-Small-Medium-Size: 14px;
+  --Font-Paragraph-Small-Medium-Weight: 500;
+  --Font-Paragraph-Small-Medium-LineHeight: 20px;
+  --Font-Paragraph-Small-Medium-Spacing: 0.25px;
+
+  /* Paragraph Small Bold */
+  --Font-Paragraph-Small-Bold-Family: var(--Font-Family-Sans);
+  --Font-Paragraph-Small-Bold-Size: 14px;
+  --Font-Paragraph-Small-Bold-Weight: 700;
+  --Font-Paragraph-Small-Bold-LineHeight: 20px;
+  --Font-Paragraph-Small-Bold-Spacing: 0.25px;
+
+  /* --------------------------------------------------------------------------
+     2.6 Caption / Tiny
+     -------------------------------------------------------------------------- */
+  /* Caption */
+  --Font-Caption-Family: var(--Font-Family-Sans);
+  --Font-Caption-Size: 12px;
+  --Font-Caption-Weight: 400;
+  --Font-Caption-LineHeight: 16px;
+  --Font-Caption-Spacing: 0.4px;
+
+  /* Tiny */
+  --Font-Tiny-Family: var(--Font-Family-Sans);
+  --Font-Tiny-Size: 10px;
+  --Font-Tiny-Weight: 400;
+  --Font-Tiny-LineHeight: 14px;
+  --Font-Tiny-Spacing: 0.4px;
+
+  /* --------------------------------------------------------------------------
+     2.7 Code
+     -------------------------------------------------------------------------- */
+  /* Paragraph Small / FiraCode */
+  --Font-Code-Small-Family: var(--Font-Family-Code);
+  --Font-Code-Small-Size: 14px;
+  --Font-Code-Small-Weight: 400;
+  --Font-Code-Small-LineHeight: 20px;
+  --Font-Code-Small-Spacing: 0px;
+
+  /* ==========================================================================
+     3. 特效 (Effects)
+     ========================================================================== */
+
+  /* --------------------------------------------------------------------------
+     3.1 阴影 (Shadows)
+     -------------------------------------------------------------------------- */
+
+  /* Light Shadows */
+  --Light-Gray-Card: 0px 4px 18px 0px rgba(75, 70, 92, 0.10);
+  --Light-Gray-Default: 0px 4px 16px 0px rgba(165, 163, 174, 0.45);
+  --Light-Gray-LG: 0px 10px 20px 0px rgba(165, 163, 174, 0.40);
+  --Light-Gray-Modal: 0px 5px 20px 0px rgba(75, 70, 92, 0.40);
+  --Light-Gray-SM: 0px 2px 4px 0px rgba(165, 163, 174, 0.30);
+
+  --Light-Main-CardLine: 0px 8px 24px -6px rgba(0, 0, 0, 0.16), 0px 0px 1px 0px rgba(0, 0, 0, 0.40);
+  --Light-Main-CardLineShadow: 0px 8px 24px -6px rgba(0, 0, 0, 0.16), 0px 0px 1px 0px rgba(0, 0, 0, 0.40);
+  --Light-Main-shadow-sm: 0px 8px 24px -6px rgba(0, 0, 0, 0.08), 0px 0px 1px 0px rgba(0, 0, 0, 0.40);
+  --Light-Main-shadow-md: 0px 12px 12px -6px rgba(0, 0, 0, 0.16), 0px 0px 1px 0px rgba(0, 0, 0, 0.40);
+  --Light-Main-shadow-lg: 0px 8px 24px -6px rgba(0, 0, 0, 0.16), 0px 0px 1px 0px rgba(0, 0, 0, 0.40);
+  --Light-Main-shadow-xl: 0px 32px 32px -8px rgba(0, 0, 0, 0.08), 0px 0px 32px -8px rgba(0, 0, 0, 0.12), 0px 0px 1px 0px rgba(0, 0, 0, 0.20);
+
+  /* Dark Shadows */
+  --Dark-Gray-Card: 0px 4px 20px 0px rgba(15, 20, 34, 0.40);
+  --Dark-Gray-Default: 0px 4px 16px 0px rgba(15, 20, 34, 0.55);
+  --Dark-Gray-LG: 0px 10px 20px 0px rgba(15, 20, 34, 0.50);
+  --Dark-Gray-Modal: 0px 5px 20px 0px rgba(15, 20, 34, 0.40);
+  --Dark-Gray-SM: 0px 2px 4px 0px rgba(15, 20, 34, 0.40);
+
+  --Dark-Main-CardLine: 0px 8px 24px -6px rgba(0, 0, 0, 0.16), 0px 0px 1px 0px rgba(0, 0, 0, 0.40);
+  --Dark-Main-CardLineShadow: 0px 8px 24px -6px rgba(0, 0, 0, 0.16), 0px 0px 1px 0px rgba(0, 0, 0, 0.40);
+  --Dark-Main-shadow-sm: 0px 8px 24px -6px rgba(0, 0, 0, 0.64), 0px 0px 1px 0px rgba(0, 0, 0, 0.56);
+  --Dark-Main-shadow-md: 0px 12px 12px -6px rgba(0, 0, 0, 0.64), 0px 0px 1px 0px rgba(0, 0, 0, 0.56);
+  --Dark-Main-shadow-lg: 0px 24px 24px -6px rgba(0, 0, 0, 0.64), 0px 0px 1px 0px rgba(0, 0, 0, 0.56);
+  --Dark-Main-shadow-xl: 0px 48px 48px -6px rgba(0, 0, 0, 0.88), 0px 0px 1px 0px rgba(0, 0, 0, 0.72);
+
+  /* Functional Shadows (Moved from Colors) */
+  --Functional-Primary-SM: 0px 2px 3px 0px rgba(78, 70, 180, 0.30);
+  --Functional-Primary-Default: 0px 4px 16px 0px rgba(78, 70, 180, 0.45);
+  --Functional-Primary-LG: 0px 10px 20px 0px rgba(78, 70, 180, 0.40);
+  --Functional-Primary-MenuActive: 0px 2px 6px 0px rgba(78, 70, 180, 0.48);
+
+  --Functional-Secondary-SM: 0px 2px 3px 0px rgba(168, 170, 174, 0.30);
+  --Functional-Secondary-Default: 0px 4px 16px 0px rgba(168, 170, 174, 0.45);
+  --Functional-Secondary-LG: 0px 10px 20px 0px rgba(168, 170, 174, 0.40);
+
+  --Functional-Success-SM: 0px 2px 3px 0px rgba(46, 125, 50, 0.30);
+  --Functional-Success-Default: 0px 4px 16px 0px rgba(46, 125, 50, 0.45);
+  --Functional-Success-LG: 0px 10px 20px 0px rgba(46, 125, 50, 0.40);
+
+  --Functional-Info-SM: 0px 2px 3px 0px rgba(64, 166, 159, 0.30);
+  --Functional-Info-Default: 0px 4px 16px 0px rgba(64, 166, 159, 0.45);
+  --Functional-Info-LG: 0px 10px 20px 0px rgba(64, 166, 159, 0.40);
+
+  --Functional-Warning-SM: 0px 2px 3px 0px rgba(255, 179, 25, 0.30);
+  --Functional-Warning-Default: 0px 4px 16px 0px rgba(255, 179, 25, 0.45);
+  --Functional-Warning-LG: 0px 10px 20px 0px rgba(255, 179, 25, 0.40);
+
+  --Functional-Danger-SM: 0px 2px 3px 0px rgba(211, 48, 48, 0.30);
+  --Functional-Danger-Default: 0px 4px 16px 0px rgba(211, 48, 48, 0.45);
+  --Functional-Danger-LG: 0px 10px 20px 0px rgba(211, 48, 48, 0.40);
+
+  /* Effect Shadows */
+  --Effect-Shadow-Light-SM: var(--Light-Main-shadow-sm);
+  --Effect-Shadow-Light-MD: var(--Light-Main-shadow-md);
+  --Effect-Shadow-Light-LG: var(--Light-Main-shadow-lg);
+  --Effect-Shadow-Light-XL: var(--Light-Main-shadow-xl);
+  --Effect-Shadow-Dark-SM: var(--Dark-Main-shadow-sm);
+  --Effect-Shadow-Dark-MD: var(--Dark-Main-shadow-md);
+  --Effect-Shadow-Dark-LG: var(--Dark-Main-shadow-lg);
+  --Effect-Shadow-Dark-XL: var(--Dark-Main-shadow-xl);
+
+  /* --------------------------------------------------------------------------
+     3.2 边框 (Borders)
+     -------------------------------------------------------------------------- */
+  --Effect-Border-Light-CardLine: var(--Light-Main-CardLine);
+  --Effect-Border-Light-CardLineShadow: var(--Light-Main-CardLineShadow);
+  --Effect-Border-Dark-CardLine: var(--Dark-Main-CardLine);
+  --Effect-Border-Dark-CardLineShadow: var(--Dark-Main-CardLineShadow);
+
+  /* --------------------------------------------------------------------------
+     3.3 圆角 (Radius)
+     -------------------------------------------------------------------------- */
+  --Effect-Radius-XS: 4px;
+  --Effect-Radius-SM: 6px;
+  --Effect-Radius-MD: 8px;
+  --Effect-Radius-LG: 12px;
+  --Effect-Radius-XL: 16px;
+  --Effect-Radius-FULL: 9999px;
+
+  /* ==========================================================================
+     4. 间距 (Spacing)
+     ========================================================================== */
+
+  /* --------------------------------------------------------------------------
+     4.1 基础刻度 (Base Scale)
+     -------------------------------------------------------------------------- */
+  --Space-1: 2px;
+  --Space-2: 4px;
+  --Space-3: 8px;
+  --Space-4: 12px;
+  --Space-5: 16px;
+  --Space-6: 20px;
+  --Space-7: 24px;
+  --Space-8: 32px;
+
+  /* --------------------------------------------------------------------------
+     4.2 Padding
+     -------------------------------------------------------------------------- */
+  --Spacing-Padding-XS: var(--Space-2);
+  --Spacing-Padding-SM: var(--Space-3);
+  --Spacing-Padding-MD: var(--Space-4);
+  --Spacing-Padding-LG: var(--Space-5);
+  --Spacing-Padding-XL: var(--Space-6);
+
+  /* --------------------------------------------------------------------------
+     4.3 Margin
+     -------------------------------------------------------------------------- */
+  --Spacing-Margin-XS: var(--Space-2);
+  --Spacing-Margin-SM: var(--Space-3);
+  --Spacing-Margin-MD: var(--Space-4);
+  --Spacing-Margin-LG: var(--Space-5);
+  --Spacing-Margin-XL: var(--Space-6);
+
+  /* --------------------------------------------------------------------------
+     4.4 Border Width
+     -------------------------------------------------------------------------- */
+  --Spacing-Border-Thin: 1px;
+  --Spacing-Border-Medium: 2px;
+  --Spacing-Border-Thick: 3px;
+
+  /* ==========================================================================
+     5. Semantic Variables (Theming)
+     ========================================================================== */
+  
+  /* Default (Light) Map */
+  --Color-Background-Body: var(--Color-Light-Background-Body);
+  --Color-Background-Header: var(--Color-Light-Background-Header);
+  --Color-Background-Card: var(--Color-Light-Background-Card);
+  
+  --Color-Text-Body: var(--Color-Light-Text-Body);
+  --Color-Text-Heading: var(--Color-Light-Text-Heading);
+  --Color-Text-Muted: var(--Color-Light-Text-Muted);
+  --Color-Text-Placeholder: var(--Color-Light-Text-Placeholder);
+  --Color-Text-Primary: var(--Color-Light-Text-Primary);
+  --Color-Text-White: var(--Color-Light-Text-White);
+
+  --Color-Divider: var(--Color-Light-Divider);
+  --Color-Selected: var(--Color-Light-Selected);
+  
+  --Effect-Shadow-SM: var(--Effect-Shadow-Light-SM);
+  --Effect-Shadow-MD: var(--Effect-Shadow-Light-MD);
+  --Effect-Shadow-LG: var(--Effect-Shadow-Light-LG);
+  --Effect-Shadow-XL: var(--Effect-Shadow-Light-XL);
+}
+
+/* Dark Theme Override */
+[data-theme="dark"] {
+  --Color-Background-Body: var(--Color-Dark-Background-Body);
+  --Color-Background-Header: var(--Color-Dark-Background-Header);
+  --Color-Background-Card: var(--Color-Dark-Background-Card);
+  
+  --Color-Text-Body: var(--Color-Dark-Text-Body);
+  --Color-Text-Heading: var(--Color-Dark-Text-Heading);
+  --Color-Text-Muted: var(--Color-Dark-Text-Muted);
+  --Color-Text-Placeholder: var(--Color-Dark-Text-Placeholder);
+  --Color-Text-Primary: var(--Color-Dark-Text-Primary);
+  --Color-Text-White: var(--Color-Dark-Text-White);
+
+  --Color-Divider: var(--Color-Dark-Divider);
+  --Color-Selected: var(--Color-Dark-Selected);
+
+  --Effect-Shadow-SM: var(--Effect-Shadow-Dark-SM);
+  --Effect-Shadow-MD: var(--Effect-Shadow-Dark-MD);
+  --Effect-Shadow-LG: var(--Effect-Shadow-Dark-LG);
+  --Effect-Shadow-XL: var(--Effect-Shadow-Dark-XL);
+}
